@@ -1,0 +1,102 @@
+{
+  "id": "ch1_s3_coal_woman",
+  "descripcion": "Tercera puerta del vertical slice. NO entrega ninguna prueba: siembra un dato raro que el jugador todavía no puede usar. Así se enseña que no todo lo que oyes sirve hoy. | Lleva un nodo de LLAMADA delante: antes la escena se abria con el vecino contestando a una pregunta que nadie habia hecho.",
+  "si_no": "ch1_s3_door_unknown",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "knock",
+  "nodos": {
+    "knock": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Good evening. Has anyone in your house been ill?",
+      "siguiente": "greeting"
+    },
+    "greeting": {
+      "hablante": "coal_woman",
+      "retrato": "seca",
+      "texto": "No one in this house, Reverend. Not yet. But I see everything from this window.",
+      "opciones": [
+        {
+          "texto": "Who has been carried out of this street?",
+          "va_a": "sacados"
+        },
+        {
+          "texto": "Have you noticed anything strange?",
+          "va_a": "the_brewery"
+        }
+      ]
+    },
+    "sacados": {
+      "hablante": "coal_woman",
+      "retrato": "seca",
+      "texto": "George Carr from number 38, on Friday night. And the tailor's boy at 39, Albert Keys. They carried him out before dawn the same day.",
+      "palabras": [
+        "george_carr",
+        "albert_keys",
+        "viernes"
+      ],
+      "marca": [
+        "vio_sacados"
+      ],
+      "opciones": [
+        {
+          "texto": "Have you noticed anything strange?",
+          "va_a": "the_brewery",
+          "requiere": [
+            "!clue_the_brewery"
+          ]
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "closing",
+          "requiere": [
+            "clue_the_brewery"
+          ]
+        }
+      ]
+    },
+    "the_brewery": {
+      "hablante": "coal_woman",
+      "retrato": "pensativa",
+      "texto": "The brewery on Broad Street. Seventy men work there, in the same air as us. I have not seen one of them carried out.",
+      "palabras": [
+        "setenta"
+      ],
+      "ficha": "f_cerveceria",
+      "marca": [
+        "clue_the_brewery"
+      ],
+      "opciones": [
+        {
+          "texto": "Who has been carried out of this street?",
+          "va_a": "sacados",
+          "requiere": [
+            "!vio_sacados"
+          ]
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "closing",
+          "requiere": [
+            "vio_sacados"
+          ]
+        }
+      ]
+    },
+    "closing": {
+      "hablante": "coal_woman",
+      "retrato": "seca",
+      "texto": "Try the tailor at 39. He has not opened his door since Friday.",
+      "marca": [
+        "spoke_to_the_coal_woman"
+      ]
+    },
+    "otra_vez": {
+      "hablante": "coal_woman",
+      "retrato": "seca",
+      "texto": "I have told you what I saw, Reverend. I have washing to do."
+    }
+  },
+  "_guia": "No nombra la bomba (señalaría al culpable). Cierra nombrando el 39.",
+  "_pivote": "Da el nombre del aprendiz del 39: esa ficha se completa cruzando dos puertas."
+}

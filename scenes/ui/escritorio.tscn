@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/escritorio.gd" id="1_escritorio"]
+
+; Escritorio de la rectoria. Vacio: lo monta el guion.
+
+[node name="Escritorio" type="Control"]
+script = ExtResource("1_escritorio")

@@ -1,0 +1,21 @@
+{
+  "id": "ch1_s3_sacristan_1",
+  "descripcion": "El carro del viernes: la primera lista de nombres.",
+  "inicio": "lista",
+  "nodos": {
+    "lista": {
+      "hablante": "sexton",
+      "retrato": "neutro",
+      "texto": "Mr Whitehead. Five names for your register, from last night. All from round here.",
+      "siguiente": "gracias"
+    },
+    "gracias": {
+      "hablante": "whitehead",
+      "retrato": "agotado",
+      "texto": "Thank you. I will put them on the map.",
+      "marca": [
+        "lista_1"
+      ]
+    }
+  }
+}

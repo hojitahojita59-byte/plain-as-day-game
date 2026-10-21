@@ -1,0 +1,84 @@
+{
+  "id": "ch1_s3_peter_viuda",
+  "descripcion": "PETER STREET, 5. Una muerte confirmada, y es LA QUE NO ENCAJA: cae lejos del racimo y el cerco del plano la deja fuera.",
+  "_por_que_esta_puesta_a_proposito": "Caso que no cuadra, a propósito: cae fuera del círculo y no se esconde.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "widow",
+      "retrato": "seca",
+      "texto": "You are a long way from your end of the parish, Reverend.",
+      "opciones": [
+        {
+          "texto": "Has anyone in this house died?",
+          "va_a": "el_marido"
+        },
+        {
+          "texto": "I am visiting every street.",
+          "va_a": "cada_calle"
+        }
+      ]
+    },
+    "cada_calle": {
+      "hablante": "widow",
+      "retrato": "seca",
+      "texto": "Good. Nobody has come down here to count before.",
+      "opciones": [
+        {
+          "texto": "Has there been a death in this house?",
+          "va_a": "el_marido"
+        }
+      ]
+    },
+    "el_marido": {
+      "hablante": "widow",
+      "retrato": "extranada",
+      "texto": "My husband, John Marsh. He died on Sunday afternoon. No one else on this part of Peter Street has been ill. I have asked.",
+      "palabras": [
+        "john_marsh",
+        "domingo"
+      ],
+      "ficha": "f_5p",
+      "opciones": [
+        {
+          "texto": "Where did he drink?",
+          "va_a": "el_trabajo"
+        },
+        {
+          "texto": "I am sorry for your loss.",
+          "va_a": "adios"
+        }
+      ]
+    },
+    "el_trabajo": {
+      "hablante": "widow",
+      "retrato": "neutro",
+      "texto": "At home we drink from the Peter Street pump. But he worked on Broad Street, and drank from the Broad Street pump all day.",
+      "palabras": [
+        "agua_peter",
+        "agua_broad"
+      ]
+    },
+    "adios": {
+      "hablante": "widow",
+      "retrato": "neutro",
+      "texto": "Thank you for coming down here."
+    },
+    "otra_vez": {
+      "hablante": "widow",
+      "retrato": "neutro",
+      "texto": "Reverend.",
+      "opciones": [
+        {
+          "texto": "Where did he drink?",
+          "va_a": "el_trabajo"
+        },
+        {
+          "texto": "Nothing. I am sorry.",
+          "va_a": "adios"
+        }
+      ]
+    }
+  }
+}

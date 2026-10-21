@@ -1,0 +1,73 @@
+{
+  "id": "ch1_s3_garment_woman",
+  "descripcion": "PRIMERA PUERTA DEL CAPITULO. Entrega una muerte confirmada y la primera prueba citable.",
+  "_por_que_la_muerte_va_ANTES_de_las_preguntas": "La muerte va antes de las preguntas: lo que da una puerta, lo da siempre.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "knock",
+  "nodos": {
+    "knock": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Good evening. I am Mr Whitehead, from St Luke's.",
+      "siguiente": "death"
+    },
+    "death": {
+      "hablante": "garment_woman",
+      "retrato": "cansada",
+      "texto": "You have come about my brother-in-law. He was well at noon on Friday. By eleven that night he was dead.",
+      "palabras": [
+        "viernes"
+      ],
+      "ficha": "f_38",
+      "siguiente": "nombre_q"
+    },
+    "nombre_q": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "I am sorry. What was his name?",
+      "siguiente": "nombre"
+    },
+    "nombre": {
+      "hablante": "garment_woman",
+      "retrato": "cansada",
+      "texto": "George Carr. His brother Thomas went first, on Wednesday. My husband. Now George.",
+      "palabras": [
+        "george_carr",
+        "thomas_carr",
+        "miercoles"
+      ],
+      "siguiente": "the_air"
+    },
+    "the_air": {
+      "hablante": "garment_woman",
+      "retrato": "segura",
+      "texto": "It is the bad air. I have stuffed rags in every crack since Tuesday.",
+      "marca": [
+        "heard_the_miasma_theory"
+      ],
+      "siguiente": "closing"
+    },
+    "closing": {
+      "hablante": "garment_woman",
+      "retrato": "cansada",
+      "texto": "Please pray for them both.",
+      "marca": [
+        "spoke_to_the_garment_woman"
+      ],
+      "siguiente": "forty_one"
+    },
+    "forty_one": {
+      "hablante": "garment_woman",
+      "retrato": "cansada",
+      "texto": "Ask at number 41. She watches the street all day. If anyone has been carried out, she saw it."
+    },
+    "otra_vez": {
+      "hablante": "garment_woman",
+      "retrato": "cansada",
+      "texto": "I have nothing more to tell you, Reverend. Pray for them."
+    }
+  },
+  "_guia": "Ella nombra la siguiente puerta (forty_one).",
+  "_sin_agua": "Sin pregunta del agua: regalaba la respuesta.",
+  "_pivote": "Dos nombres y dos días a propósito; la ficha pide al cuñado (George, viernes)."
+}

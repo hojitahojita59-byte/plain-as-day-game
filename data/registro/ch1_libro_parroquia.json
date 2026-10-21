@@ -1,0 +1,121 @@
+{
+  "id": "ch1_libro_parroquia",
+  "descripcion": "EL LIBRO DE LA PARROQUIA. Lo que Whitehead anotó durante la semana porque es su trabajo. Va en dos tandas y las dos se clavan A MANO en el plano (guion jugable, I.2 y I.5): la primera son los cinco con los que empieza; la segunda llega después del entierro y es la que lleva el plano hasta unos treinta sin escribir treinta conversaciones.",
+  "_sobre_los_nombres": "Nombres inventados (escenografía). Lo histórico lleva cita en evidence.json.",
+  "_sobre_los_puntos": "Cada asiento, una dirección con casa en la calle 3D (soho.json).",
+  "asientos": [
+    {
+      "id": "reg_ann_pike",
+      "nombre": "Ann Pike",
+      "calle": "18 Cambridge Street",
+      "dia": "30 August"
+    },
+    {
+      "id": "reg_james_holt",
+      "nombre": "James Holt",
+      "calle": "44 Broad Street",
+      "dia": "31 August"
+    },
+    {
+      "id": "reg_elizabeth_dunn",
+      "nombre": "Elizabeth Dunn",
+      "calle": "39 Broad Street",
+      "dia": "31 August"
+    },
+    {
+      "id": "reg_william_reed",
+      "nombre": "William Reed",
+      "calle": "9 Cambridge Street",
+      "dia": "31 August"
+    }
+  ],
+  "_los_dos_que_no_encajan": "Ward y Porter, lejos a propósito: Snow halló 10 muertes más cerca de otra bomba.",
+  "_segunda_tanda": "Se abre con la bandera buried_frances_lewis.",
+  "segunda_tanda": [
+    {
+      "id": "reg_mary_collins",
+      "nombre": "Mary Collins",
+      "calle": "31 Broad Street",
+      "dia": "31 August"
+    },
+    {
+      "id": "reg_george_foster",
+      "nombre": "George Foster",
+      "calle": "37 Broad Street",
+      "dia": "31 August"
+    },
+    {
+      "id": "reg_jane_wicks",
+      "nombre": "Jane Wicks",
+      "calle": "10 Cambridge Street",
+      "dia": "31 August"
+    },
+    {
+      "id": "reg_samuel_price",
+      "nombre": "Samuel Price",
+      "calle": "42 Broad Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_ellen_price",
+      "nombre": "Ellen Price",
+      "calle": "42 Broad Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_robert_hale",
+      "nombre": "Robert Hale",
+      "calle": "45 Broad Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_sarah_mott",
+      "nombre": "Sarah Mott",
+      "calle": "15 Cambridge Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_henry_bliss",
+      "nombre": "Henry Bliss",
+      "calle": "33 Broad Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_ann_gould",
+      "nombre": "Ann Gould",
+      "calle": "13 Cambridge Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_elizabeth_ward",
+      "nombre": "Elizabeth Ward",
+      "calle": "3 Marshall Street",
+      "dia": "1 September"
+    },
+    {
+      "id": "reg_charles_webb",
+      "nombre": "Charles Webb",
+      "calle": "50 Broad Street",
+      "dia": "2 September"
+    },
+    {
+      "id": "reg_martha_lane",
+      "nombre": "Martha Lane",
+      "calle": "36 Broad Street",
+      "dia": "2 September"
+    },
+    {
+      "id": "reg_william_cox",
+      "nombre": "William Cox",
+      "calle": "17 Cambridge Street",
+      "dia": "2 September"
+    },
+    {
+      "id": "reg_john_porter",
+      "nombre": "John Porter",
+      "calle": "24 Poland Street",
+      "dia": "2 September"
+    }
+  ],
+  "_pivote": "Con número, el punto sale de punto_de (plano_parroquia.gd); aquí solo sin número."
+}

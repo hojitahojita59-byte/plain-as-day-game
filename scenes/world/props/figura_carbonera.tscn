@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: la carbonera. Editar aqui, no en la calle.
+
+[node name="FiguraCarbonera" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.15, 0.14, 0.14, 1)
+color_pantalon = Color(0.19, 0.17, 0.16, 1)
+color_sombrero = Color(0.12, 0.11, 0.11, 1)
+color_cuello = Color(0.45, 0.42, 0.38, 1)
+lleva_chistera = false
+lleva_chal = true
+lleva_alzacuellos = false
+estatura = 0.86
+inclinacion = 0.20
+brazo_izquierdo = 0.12
+brazo_derecho = 0.10

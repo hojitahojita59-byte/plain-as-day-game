@@ -1,0 +1,125 @@
+{
+  "id": "ch1_s3_tailor",
+  "descripcion": "TERCERA PUERTA. Entrega una muerte confirmada. La misma regla que el 38: lo que la puerta da, lo da siempre; lo que se elige es cuanto mas se quiere saber.",
+  "_por_que_no_otorga_prueba": "No otorga broad_street_racimo: esa la gana el jugador al cercar el plano.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "tailor",
+      "retrato": "receloso",
+      "texto": "Who is it? I am not opening the door to anyone.",
+      "siguiente": "presenta"
+    },
+    "death": {
+      "hablante": "tailor",
+      "retrato": "roto",
+      "texto": "My apprentice. He was only seventeen. He died before dawn on Friday, in the room behind the shop. And my wife, Elizabeth, on Thursday.",
+      "palabras": [
+        "diecisiete",
+        "viernes",
+        "elizabeth_dunn",
+        "jueves"
+      ],
+      "ficha": "f_39",
+      "opciones": [
+        {
+          "texto": "Was the boy Albert Keys?",
+          "va_a": "si_albert",
+          "requiere": [
+            "palabra_albert_keys"
+          ]
+        },
+        {
+          "texto": "What was the boy's name?",
+          "va_a": "sin_nombre",
+          "requiere": [
+            "!palabra_albert_keys"
+          ]
+        },
+        {
+          "texto": "Do you know what made him ill?",
+          "va_a": "fear"
+        }
+      ]
+    },
+    "si_albert": {
+      "hablante": "tailor",
+      "retrato": "roto",
+      "texto": "Yes. Albert. He was a good boy.",
+      "siguiente": "fear"
+    },
+    "sin_nombre": {
+      "hablante": "tailor",
+      "retrato": "roto",
+      "texto": "Please, Reverend. I cannot say his name yet.",
+      "siguiente": "fear"
+    },
+    "fear": {
+      "hablante": "tailor",
+      "retrato": "receloso",
+      "texto": "The air from the street. It gets in under the door. So I keep it shut, with rags in every crack.",
+      "marca": [
+        "heard_the_miasma_theory"
+      ],
+      "opciones": [
+        {
+          "texto": "Where did the boy fetch water from?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "I will not keep you.",
+          "va_a": "closing"
+        }
+      ]
+    },
+    "closing": {
+      "hablante": "tailor",
+      "retrato": "roto",
+      "texto": "Pray for them both, Reverend."
+    },
+    "agua": {
+      "hablante": "tailor",
+      "retrato": "neutro",
+      "texto": "From the Broad Street pump, for the shop. Ten times a day, in this heat.",
+      "palabras": [
+        "agua_broad"
+      ],
+      "siguiente": "closing"
+    },
+    "otra_vez": {
+      "hablante": "tailor",
+      "retrato": "neutro",
+      "texto": "Reverend? Is there something else?",
+      "opciones": [
+        {
+          "texto": "Where did the boy fetch water from?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "No. Forgive me.",
+          "va_a": "closing"
+        }
+      ]
+    },
+    "presenta": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Henry Whitehead, from St Luke's. I saw the black ribbon on your door.",
+      "siguiente": "entreabre"
+    },
+    "entreabre": {
+      "hablante": "tailor",
+      "retrato": "receloso",
+      "texto": "Reverend. Forgive me. I will open it a little, but please stay outside.",
+      "opciones": [
+        {
+          "texto": "Who have you lost?",
+          "va_a": "death"
+        }
+      ]
+    }
+  },
+  "_pivote": "No sabe el nombre del chico (lo da la carbonera). Elizabeth es distractor.",
+  "_reescrito": "Whitehead pregunta porque vio el lazo; el sastre no lo suelta solo."
+}

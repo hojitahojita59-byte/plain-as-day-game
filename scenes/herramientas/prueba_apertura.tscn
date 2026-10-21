@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/herramientas/prueba_apertura.gd" id="1_aper"]
+
+[node name="PruebaApertura" type="Node"]
+script = ExtResource("1_aper")

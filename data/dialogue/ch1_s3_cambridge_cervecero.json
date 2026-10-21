@@ -1,0 +1,89 @@
+{
+  "id": "ch1_s3_cambridge_cervecero",
+  "descripcion": "CAMBRIDGE STREET, 16. EL DATO RARO. Un mozo de la fabrica de cerveza dice que en la fabrica no ha caido nadie. No entrega ninguna muerte: entrega una ausencia, que es lo mas dificil de recoger y lo que mas vale.",
+  "_lo_que_este_hombre_no_puede_decir": "No relaciona cerveza y salud: eso lo descubre el jugador.",
+  "_como_se_cobra": "Segunda voz independiente (tras la carbonera); se puede citar en el Acto II.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "brewery_man",
+      "retrato": "franco",
+      "texto": "Evening, Reverend. A pint? No, of course not. What can I do for you?",
+      "opciones": [
+        {
+          "texto": "Has anyone here been ill?",
+          "va_a": "en_casa"
+        },
+        {
+          "texto": "You work at the brewery?",
+          "va_a": "la_fabrica"
+        }
+      ]
+    },
+    "en_casa": {
+      "hablante": "brewery_man",
+      "retrato": "franco",
+      "texto": "Not one of this lot, as you can see. Not me either.",
+      "opciones": [
+        {
+          "texto": "You work at the brewery?",
+          "va_a": "la_fabrica"
+        }
+      ]
+    },
+    "la_fabrica": {
+      "hablante": "brewery_man",
+      "retrato": "extranado",
+      "texto": "Since I was fourteen. There are more than seventy of us. Two have been a bit ill. None of us has died.",
+      "palabras": [
+        "setenta",
+        "ninguno"
+      ],
+      "ficha": "f_cerveceria",
+      "marca": [
+        "heard_the_brewery_again"
+      ],
+      "opciones": [
+        {
+          "texto": "Do the men drink the street water?",
+          "va_a": "el_pozo"
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "cierre"
+        }
+      ]
+    },
+    "cierre": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Thank you."
+    },
+    "el_pozo": {
+      "hablante": "brewery_man",
+      "retrato": "neutro",
+      "texto": "Mr Huggins gives us our beer, and there is the brewery well if we want water. None of us goes out to the street pump.",
+      "palabras": [
+        "pozo_cerveceria"
+      ],
+      "siguiente": "cierre"
+    },
+    "otra_vez": {
+      "hablante": "brewery_man",
+      "retrato": "neutro",
+      "texto": "Back again, Reverend? The men are still all well.",
+      "opciones": [
+        {
+          "texto": "Do the men drink the street water?",
+          "va_a": "el_pozo"
+        },
+        {
+          "texto": "Good night.",
+          "va_a": "cierre"
+        }
+      ]
+    }
+  },
+  "_pivote": "Pozo propio y cerveza son históricos, pero van al Acto II."
+}

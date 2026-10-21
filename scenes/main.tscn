@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[node name="Main" type="Node"]
+
+[node name="WorldHolder" type="Node3D" parent="."]
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+layer = 10

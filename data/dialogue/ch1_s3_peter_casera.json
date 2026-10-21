@@ -1,0 +1,63 @@
+{
+  "id": "ch1_s3_peter_casera",
+  "descripcion": "PETER STREET, 9. Once personas bajo un techo y ni un caso.",
+  "_por_que_importa_aunque_no_de_nada": "Casa fuera del círculo del plano; nadie lo dice.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "landlady",
+      "retrato": "abierta",
+      "texto": "Eleven people live in this house, counting my lodgers. No one has died. You are the third man this week to ask.",
+      "palabras": [
+        "once",
+        "ninguno"
+      ],
+      "ficha": "f_casera",
+      "siguiente": "memoria"
+    },
+    "memoria": {
+      "hablante": "landlady",
+      "retrato": "abierta",
+      "texto": "Ask what you need, Reverend. I have a house to run.",
+      "opciones": [
+        {
+          "texto": "Where does the house get its water?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "I will.",
+          "va_a": "adios"
+        }
+      ]
+    },
+    "agua": {
+      "hablante": "landlady",
+      "retrato": "neutro",
+      "texto": "All eleven of us fetch our water from the Peter Street pump. Not one of us has been ill.",
+      "palabras": [
+        "agua_peter"
+      ]
+    },
+    "adios": {
+      "hablante": "landlady",
+      "retrato": "neutro",
+      "texto": "Good."
+    },
+    "otra_vez": {
+      "hablante": "landlady",
+      "retrato": "neutro",
+      "texto": "Still counting, Reverend?",
+      "opciones": [
+        {
+          "texto": "Where does the house get its water?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "Yes. Good night.",
+          "va_a": "adios"
+        }
+      ]
+    }
+  }
+}

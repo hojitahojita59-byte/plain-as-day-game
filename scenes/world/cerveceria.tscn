@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3]
+
+; La sala de la cervecería Huggins, de noche y llena. Todo lo demás: cerveceria.gd.
+
+[ext_resource type="Script" path="res://scripts/world/cerveceria.gd" id="1_cerveceria"]
+[ext_resource type="Script" path="res://scripts/world/art_style.gd" id="2_estilo"]
+
+[sub_resource type="Environment" id="Env_cerveceria"]
+background_mode = 1
+background_color = Color(0.05, 0.035, 0.025, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.6, 0.48, 0.36, 1)
+ambient_light_energy = 0.36
+tonemap_mode = 3
+tonemap_white = 2.0
+glow_enabled = true
+glow_intensity = 0.8
+glow_bloom = 0.04
+glow_hdr_threshold = 0.9
+
+[node name="Cerveceria" type="Node3D"]
+script = ExtResource("1_cerveceria")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Env_cerveceria")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 5.4, 9.2)
+current = true
+fov = 58.0
+
+[node name="EstiloArtistico" type="Node3D" parent="."]
+script = ExtResource("2_estilo")
+skip_names = PackedStringArray("Cristal", "Suelo")
+saturation = 0.72
+fog_miasma = Color(0.42, 0.32, 0.22, 1)
+fog_clean = Color(0.42, 0.32, 0.22, 1)
+fog_density_miasma = 0.022
+fog_density_clean = 0.022

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: Sarah Lewis (delantal claro). Editar aqui, no en la calle.
+
+[node name="FiguraSarahLewis" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.26, 0.21, 0.24, 1)
+color_pantalon = Color(0.74, 0.71, 0.64, 1)
+color_sombrero = Color(0.30, 0.26, 0.26, 1)
+color_cuello = Color(0.70, 0.66, 0.60, 1)
+lleva_chistera = false
+lleva_gorra = false
+lleva_chal = true
+lleva_alzacuellos = false
+estatura = 0.94
+inclinacion = 0.12
+brazo_izquierdo = -0.42
+brazo_derecho = -0.50

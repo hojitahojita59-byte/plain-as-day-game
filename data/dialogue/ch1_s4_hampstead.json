@@ -1,0 +1,92 @@
+{
+  "id": "ch1_s4_hampstead",
+  "descripcion": "HAMPSTEAD. La hija de la viuda Eley, en la casa de su madre. Aqui se sabe lo del agua.",
+  "_regla": "Lo cuenta sin darle importancia: nadie subraya el agua.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Miss Eley? I am Henry Whitehead, curate of St Luke's, in Soho. I am sorry for your mother.",
+      "siguiente": "ella"
+    },
+    "ella": {
+      "hablante": "eley_daughter",
+      "retrato": "seria",
+      "texto": "Soho? She had not been there for months, Reverend. The air here is clean. I do not understand it.",
+      "opciones": [
+        {
+          "texto": "What did she eat and drink, those last days?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "Was anyone else ill?",
+          "va_a": "prima"
+        }
+      ]
+    },
+    "agua": {
+      "hablante": "eley_daughter",
+      "retrato": "seria",
+      "texto": "Nothing new. She liked the water from the Broad Street pump, so the cart brought her a big bottle every day. She drank it on Thursday and on Friday.",
+      "palabras": [
+        "agua_broad",
+        "jueves",
+        "viernes"
+      ],
+      "siguiente": "mas",
+      "marca": [
+        "eley_agua"
+      ]
+    },
+    "prima": {
+      "hablante": "eley_daughter",
+      "retrato": "suave",
+      "texto": "My cousin was staying with her. She went home to Islington, and she died there too.",
+      "palabras": [
+        "islington"
+      ],
+      "marca": [
+        "eley_prima"
+      ],
+      "siguiente": "mas"
+    },
+    "mas": {
+      "hablante": "eley_daughter",
+      "retrato": "suave",
+      "texto": "Is there anything else you want to ask, Reverend?",
+      "opciones": [
+        {
+          "texto": "What did she eat and drink, those last days?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "Was anyone else ill?",
+          "va_a": "prima"
+        },
+        {
+          "texto": "No, that is all.",
+          "va_a": "adios",
+          "requiere": [
+            "eley_agua",
+            "eley_prima"
+          ]
+        }
+      ]
+    },
+    "adios": {
+      "hablante": "whitehead",
+      "retrato": "agotado",
+      "texto": "Thank you, Miss Eley. I must go back to Soho.",
+      "marca": [
+        "heard_about_hampstead"
+      ]
+    },
+    "otra_vez": {
+      "hablante": "eley_daughter",
+      "retrato": "seria",
+      "texto": "There is nothing more, Reverend."
+    }
+  },
+  "_regla2": "Se puede volver a preguntar; solo se despide tras oír las dos cosas."
+}

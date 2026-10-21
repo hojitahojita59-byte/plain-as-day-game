@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3]
+
+; I.4 El entierro. Suelo, lapidas y gente: cementerio.gd.
+
+[ext_resource type="Script" path="res://scripts/world/cementerio.gd" id="1_cementerio"]
+[ext_resource type="Script" path="res://scripts/world/art_style.gd" id="2_estilo"]
+[ext_resource type="Script" path="res://scripts/world/scene_info.gd" id="3_info"]
+
+[sub_resource type="Environment" id="Env_cementerio"]
+background_mode = 1
+background_color = Color(0.46, 0.48, 0.47, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.62, 0.64, 0.62, 1)
+ambient_light_energy = 0.7
+tonemap_mode = 3
+tonemap_white = 2.0
+fog_enabled = true
+fog_light_color = Color(0.36, 0.4, 0.24, 1)
+fog_density = 0.03
+
+[node name="Cementerio" type="Node3D"]
+script = ExtResource("1_cementerio")
+
+[node name="Info" type="Node3D" parent="."]
+script = ExtResource("3_info")
+scene_id = "ch1_s4_entierro"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Env_cementerio")
+
+[node name="Luz" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866, -0.25, 0.433, 0, 0.866, 0.5, -0.5, -0.433, 0.75, 0, 8, 0)
+light_color = Color(0.86, 0.87, 0.88, 1)
+light_energy = 0.7
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.94, -0.12, 0.32, 0, 0.94, 0.35, -0.34, -0.33, 0.88, 3.4, 3.6, 8.4)
+current = true
+fov = 50.0
+
+[node name="EstiloArtistico" type="Node3D" parent="."]
+script = ExtResource("2_estilo")
+skip_names = PackedStringArray("Sombra")

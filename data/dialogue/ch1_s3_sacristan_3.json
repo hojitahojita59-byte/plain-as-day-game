@@ -1,0 +1,21 @@
+{
+  "id": "ch1_s3_sacristan_3",
+  "descripcion": "El carro del domingo, tras el entierro: la lista larga.",
+  "inicio": "lista",
+  "nodos": {
+    "lista": {
+      "hablante": "sexton",
+      "retrato": "neutro",
+      "texto": "Fourteen more, sir. I have stopped counting the coffins. You count them.",
+      "siguiente": "gracias"
+    },
+    "gracias": {
+      "hablante": "whitehead",
+      "retrato": "agotado",
+      "texto": "I will. Every one.",
+      "marca": [
+        "lista_3"
+      ]
+    }
+  }
+}

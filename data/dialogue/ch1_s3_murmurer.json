@@ -1,0 +1,91 @@
+{
+  "id": "ch1_s3_murmurer",
+  "descripcion": "El que murmura. LLAVE de la escena: hasta que no da el numero, las puertas estan cerradas. Reescrito porque Whitehead se quedaba callado ante dos cosas ante las que un cura NO se calla: que Dios ha abandonado a alguien, y tres muertos de una misma casa. Ademas, aqui es donde se declara que Whitehead cree en el miasma: lo dice el, no un cartel.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "overheard",
+  "nodos": {
+    "overheard": {
+      "hablante": "murmurer",
+      "retrato": "hundido",
+      "texto": "God has abandoned this street, Reverend.",
+      "opciones": [
+        {
+          "texto": "He has not abandoned you.",
+          "va_a": "comfort"
+        },
+        {
+          "texto": "What do you think is causing this?",
+          "va_a": "the_air"
+        },
+        {
+          "texto": "(Say nothing.)",
+          "va_a": "waited"
+        }
+      ]
+    },
+    "comfort": {
+      "hablante": "murmurer",
+      "retrato": "hundido",
+      "texto": "Then why is everyone dying?",
+      "siguiente": "losses"
+    },
+    "the_air": {
+      "hablante": "murmurer",
+      "retrato": "hundido",
+      "texto": "The smell from the drains. Everyone says it is the bad air.",
+      "marca": [
+        "heard_the_miasma_theory"
+      ],
+      "siguiente": "losses"
+    },
+    "waited": {
+      "hablante": "murmurer",
+      "retrato": "hundido",
+      "texto": "At least you do not tell me I am wrong.",
+      "siguiente": "losses"
+    },
+    "losses": {
+      "hablante": "murmurer",
+      "retrato": "hundido",
+      "texto": "I have lived here forty-one years. I have never seen so many die in one week.",
+      "anota": {
+        "id": "nota_tres_de_una_puerta",
+        "que": "Many deaths on Broad Street this week, more than anyone remembers.",
+        "quien": "A man at the kerb",
+        "donde": "Broad Street"
+      },
+      "siguiente": "apology"
+    },
+    "apology": {
+      "hablante": "whitehead",
+      "retrato": "agotado",
+      "texto": "I am going to every house that has lost someone.",
+      "siguiente": "offer"
+    },
+    "offer": {
+      "hablante": "murmurer",
+      "retrato": "hundido",
+      "texto": "Who are you looking for?",
+      "opciones": [
+        {
+          "texto": "A woman who takes in garments sent word to the church. Which house is hers?",
+          "va_a": "the_house"
+        },
+        {
+          "texto": "Someone sent for me from a house with rags at the windows. Which number?",
+          "va_a": "the_house"
+        }
+      ]
+    },
+    "the_house": {
+      "hablante": "murmurer",
+      "retrato": "senalando",
+      "texto": "Number 38.",
+      "marca": [
+        "knows_the_garment_womans_house"
+      ],
+      "siguiente": ""
+    }
+  },
+  "_guia": "Las opciones dicen por qué la busca: le mandaron recado."
+}

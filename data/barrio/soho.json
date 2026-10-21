@@ -1,0 +1,2337 @@
+{
+  "id": "soho",
+  "nombre": "Broad Street",
+  "scene_id": "ch1_s3_puerta_a_puerta",
+  "semilla": 1854,
+  "_es": "El barrio: Broad Street de lado a lado y Cambridge Street hacia el fondo.",
+  "_por_que_las_laterales_van_hacia_el_fondo": "La cámara mira a -Z y no gira: las laterales van hacia el fondo. Ver REJILLA.md.",
+  "_lo_que_no_se_movio": "Ajustado a mano: Sarah 7,95, cubo 7,36, bomba -3, el 40 en 7,5.",
+  "caja": {
+    "x": [
+      -46,
+      46
+    ],
+    "z": [
+      -40,
+      9
+    ]
+  },
+  "camara": {
+    "x": [
+      -37,
+      37
+    ],
+    "z": [
+      -36,
+      2
+    ]
+  },
+  "tramos": [
+    {
+      "id": "broad_sur",
+      "eje": "+x",
+      "desde": [
+        -57.5,
+        -7.5
+      ],
+      "bahias": 24,
+      "mira": "+z",
+      "_huecos": "Callejón en x = 22,5. En x = -42,5 está la rectoría (ver esquinas).",
+      "huecos": [
+        16
+      ],
+      "bocas": [
+        4,
+        5,
+        8,
+        9,
+        18,
+        19
+      ],
+      "_bocas": "Bocas de New St (4,5), Cambridge St (8,9) y Peter St (18,19).",
+      "_largo": "24 bahías, de -60 a 60; las 3 de cada punta quedan fuera de lo andable.",
+      "estilo": "tiendas"
+    },
+    {
+      "id": "cambridge_oeste",
+      "eje": "-z",
+      "desde": [
+        -22.5,
+        -12.5
+      ],
+      "bahias": 6,
+      "mira": "+x",
+      "_es": "Acera izquierda bajando; fachada en x = -20.",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "cambridge_este",
+      "eje": "-z",
+      "desde": [
+        -7.5,
+        -12.5
+      ],
+      "bahias": 6,
+      "mira": "-x",
+      "_es": "Acera derecha; fachada en x = -10 (10 m de ancho, como Broad).",
+      "huecos": [
+        3
+      ],
+      "_huecos": "Un callejon a media Cambridge Street, en z = -27,5.",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "cambridge_fondo",
+      "eje": "+x",
+      "desde": [
+        -27.5,
+        -42.5
+      ],
+      "bahias": 5,
+      "mira": "+z",
+      "_es": "Fondo de Cambridge Street: hilera sin puertas en z = -40, fin de lo andable.",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "new_oeste",
+      "eje": "-z",
+      "desde": [
+        -42.5,
+        -12.5
+      ],
+      "bahias": 3,
+      "mira": "+x",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "new_este",
+      "eje": "-z",
+      "desde": [
+        -27.5,
+        -12.5
+      ],
+      "bahias": 3,
+      "mira": "-x",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "new_fondo",
+      "eje": "+x",
+      "desde": [
+        -42.5,
+        -27.5
+      ],
+      "bahias": 4,
+      "mira": "+z",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "peter_oeste",
+      "eje": "-z",
+      "desde": [
+        27.5,
+        -12.5
+      ],
+      "bahias": 3,
+      "mira": "+x",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "peter_este",
+      "eje": "-z",
+      "desde": [
+        42.5,
+        -12.5
+      ],
+      "bahias": 3,
+      "mira": "-x",
+      "estilo": "sencillo"
+    },
+    {
+      "id": "peter_fondo",
+      "eje": "+x",
+      "desde": [
+        27.5,
+        -27.5
+      ],
+      "bahias": 4,
+      "mira": "+z",
+      "estilo": "sencillo"
+    }
+  ],
+  "_puerta_sin_nombre": "Pensamiento de un renglón ante una puerta que aún no se puede llamar.",
+  "puerta_sin_nombre": "No one has sent you to this house yet.",
+  "_corredores": "El suelo: eje, centro, largo y el ancho de cada acera. De ahi salen calzada, aceras y bordillos.",
+  "corredores": [
+    {
+      "eje": "x",
+      "centro": [
+        0,
+        0
+      ],
+      "largo": 180,
+      "acera_a": 2.6,
+      "acera_b": 6.8
+    },
+    {
+      "eje": "z",
+      "centro": [
+        -15,
+        -23.5
+      ],
+      "largo": 37,
+      "acera_a": 2.6,
+      "acera_b": 2.6
+    },
+    {
+      "eje": "z",
+      "centro": [
+        -35,
+        -15
+      ],
+      "largo": 20,
+      "acera_a": 2.6,
+      "acera_b": 2.6
+    },
+    {
+      "eje": "z",
+      "centro": [
+        35,
+        -15
+      ],
+      "largo": 20,
+      "acera_a": 2.6,
+      "acera_b": 2.6
+    },
+    {
+      "eje": "z",
+      "centro": [
+        -65,
+        -30
+      ],
+      "largo": 40,
+      "acera_a": 2.6,
+      "acera_b": 2.6
+    },
+    {
+      "eje": "z",
+      "centro": [
+        70,
+        32
+      ],
+      "largo": 36,
+      "acera_a": 2.6,
+      "acera_b": 2.6
+    }
+  ],
+  "_enfrente": "Solo para el cine (la cámara de juego no lo pinta): la otra acera de Broad St y Broad St más allá de las puntas. Como un tramo, sin puertas.",
+  "enfrente": [
+    {
+      "id": "broad_norte",
+      "eje": "+x",
+      "desde": [
+        -87.5,
+        11.7
+      ],
+      "bahias": 36,
+      "mira": "-z",
+      "bocas": [
+        31,
+        32
+      ],
+      "estilo": "tiendas",
+      "pisos_max": 3,
+      "_bocas": "Poland Street. Dos o tres plantas, cubierta tras pretil y chimeneas atrás: la grúa alta del tráiler mira por encima.",
+      "pisos_min": 2,
+      "cubierta": "pretil",
+      "chimenea_atras": true
+    },
+    {
+      "id": "broad_sur_oeste",
+      "eje": "+x",
+      "desde": [
+        -87.5,
+        -7.5
+      ],
+      "bahias": 4,
+      "mira": "+z",
+      "estilo": "tiendas"
+    },
+    {
+      "id": "broad_sur_este",
+      "eje": "+x",
+      "desde": [
+        62.5,
+        -7.5
+      ],
+      "bahias": 6,
+      "mira": "+z",
+      "estilo": "tiendas"
+    }
+  ],
+  "_relleno": "Solo para el cine: patios detrás de las hileras y manzanas sencillas hasta la niebla. fila o patios; desde/hasta es la línea de fachada.",
+  "relleno": [
+    {
+      "tipo": "patios",
+      "desde": [
+        -5,
+        -10
+      ],
+      "hasta": [
+        25,
+        -10
+      ],
+      "mira": "+z",
+      "fondo": 7,
+      "paso": 5
+    },
+    {
+      "tipo": "patios",
+      "desde": [
+        45,
+        -10
+      ],
+      "hasta": [
+        90,
+        -10
+      ],
+      "mira": "+z",
+      "fondo": 7,
+      "paso": 5
+    },
+    {
+      "tipo": "patios",
+      "desde": [
+        -52,
+        -10
+      ],
+      "hasta": [
+        -45,
+        -10
+      ],
+      "mira": "+z",
+      "fondo": 7,
+      "paso": 5
+    },
+    {
+      "tipo": "patios",
+      "desde": [
+        -90,
+        -10
+      ],
+      "hasta": [
+        -78,
+        -10
+      ],
+      "mira": "+z",
+      "fondo": 7,
+      "paso": 5
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -5,
+        -18
+      ],
+      "hasta": [
+        25,
+        -18
+      ],
+      "mira": "+z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        45,
+        -18
+      ],
+      "hasta": [
+        90,
+        -18
+      ],
+      "mira": "+z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -52,
+        -18
+      ],
+      "hasta": [
+        -45,
+        -18
+      ],
+      "mira": "+z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -90,
+        -18
+      ],
+      "hasta": [
+        -78,
+        -18
+      ],
+      "mira": "+z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -52,
+        -33
+      ],
+      "hasta": [
+        -30,
+        -33
+      ],
+      "mira": "+z",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -5,
+        -33
+      ],
+      "hasta": [
+        90,
+        -33
+      ],
+      "mira": "+z",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -90,
+        -33
+      ],
+      "hasta": [
+        -78,
+        -33
+      ],
+      "mira": "+z",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -70,
+        -10
+      ],
+      "hasta": [
+        -70,
+        -50
+      ],
+      "mira": "+x",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -60,
+        -10
+      ],
+      "hasta": [
+        -60,
+        -50
+      ],
+      "mira": "-x",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -90,
+        -50
+      ],
+      "hasta": [
+        90,
+        -50
+      ],
+      "mira": "+z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "patios",
+      "desde": [
+        -90,
+        14.2
+      ],
+      "hasta": [
+        57,
+        14.2
+      ],
+      "mira": "-z",
+      "fondo": 7,
+      "paso": 5
+    },
+    {
+      "tipo": "patios",
+      "desde": [
+        83,
+        14.2
+      ],
+      "hasta": [
+        90,
+        14.2
+      ],
+      "mira": "-z",
+      "fondo": 7,
+      "paso": 5
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -90,
+        22
+      ],
+      "hasta": [
+        57,
+        22
+      ],
+      "mira": "-z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        83,
+        22
+      ],
+      "hasta": [
+        90,
+        22
+      ],
+      "mira": "-z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        65,
+        14.2
+      ],
+      "hasta": [
+        65,
+        50
+      ],
+      "mira": "+x",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        75,
+        14.2
+      ],
+      "hasta": [
+        75,
+        50
+      ],
+      "mira": "-x",
+      "fondo": 8,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        -90,
+        38
+      ],
+      "hasta": [
+        57,
+        38
+      ],
+      "mira": "-z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    },
+    {
+      "tipo": "fila",
+      "desde": [
+        83,
+        38
+      ],
+      "hasta": [
+        90,
+        38
+      ],
+      "mira": "-z",
+      "fondo": 9,
+      "pisos": [
+        3,
+        4
+      ]
+    }
+  ],
+  "rotulos": [
+    {
+      "tramo": "broad_sur",
+      "bahia": 12,
+      "texto": "BROAD STREET"
+    },
+    {
+      "tramo": "cambridge_oeste",
+      "bahia": 1,
+      "texto": "CAMBRIDGE STREET"
+    },
+    {
+      "tramo": "new_oeste",
+      "bahia": 1,
+      "texto": "NEW STREET"
+    },
+    {
+      "tramo": "peter_oeste",
+      "bahia": 1,
+      "texto": "PETER STREET"
+    }
+  ],
+  "entradas": {
+    "defecto": [
+      2,
+      1
+    ]
+  },
+  "puertas": [
+    {
+      "numero": "2",
+      "dialogo": "ch1_s3_new_tendero",
+      "nombre": "Number two",
+      "requiere": [
+        "dia_3"
+      ],
+      "_quien": "El tendero: chaleco amarillo, mangas de camisa, sin abrigo.",
+      "ropa": {
+        "abrigo": [
+          0.78,
+          0.66,
+          0.3
+        ],
+        "pantalon": [
+          0.25,
+          0.24,
+          0.26
+        ],
+        "sombrero": [
+          0.4,
+          0.35,
+          0.2
+        ],
+        "cuello": [
+          0.95,
+          0.93,
+          0.88
+        ],
+        "chistera": false,
+        "alzacuellos": false,
+        "estatura": 1,
+        "inclinacion": -0.12,
+        "brazo_izquierdo": 0.24,
+        "brazo_derecho": 0.28
+      },
+      "tramo": "new_oeste",
+      "bahia": 0
+    },
+    {
+      "numero": "4",
+      "dialogo": "ch1_s3_new_hampstead",
+      "nombre": "Number four",
+      "requiere": [
+        "dia_3"
+      ],
+      "_quien": "La sobrina: vestido azul pálido.",
+      "ropa": {
+        "abrigo": [
+          0.55,
+          0.66,
+          0.76
+        ],
+        "pantalon": [
+          0.4,
+          0.42,
+          0.45
+        ],
+        "sombrero": [
+          0.44,
+          0.54,
+          0.62
+        ],
+        "cuello": [
+          0.92,
+          0.9,
+          0.86
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.96,
+        "inclinacion": 0,
+        "brazo_izquierdo": -0.24,
+        "brazo_derecho": 0.16
+      },
+      "tramo": "new_este",
+      "bahia": 1
+    },
+    {
+      "numero": "6",
+      "dialogo": "ch1_s3_new_cerrada",
+      "no_abre": true,
+      "nombre": "Number six",
+      "requiere": [
+        "dia_3"
+      ],
+      "_quien": "Nadie: la hoja se abre pero no sale figura, por eso no lleva ropa.",
+      "ropa": {},
+      "tramo": "new_oeste",
+      "bahia": 2
+    },
+    {
+      "numero": "38",
+      "dialogo": "ch1_s3_garment_woman",
+      "nombre": "The first door",
+      "requiere": [],
+      "ropa": {
+        "abrigo": [
+          0.68,
+          0.62,
+          0.48
+        ],
+        "pantalon": [
+          0.44,
+          0.4,
+          0.33
+        ],
+        "sombrero": [
+          0.58,
+          0.52,
+          0.4
+        ],
+        "cuello": [
+          0.9,
+          0.88,
+          0.82
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 1,
+        "inclinacion": 0.02,
+        "brazo_izquierdo": 0.18,
+        "brazo_derecho": -0.08
+      },
+      "tramo": "broad_sur",
+      "bahia": 10
+    },
+    {
+      "numero": "39",
+      "dialogo": "ch1_s3_tailor",
+      "nombre": "The second door",
+      "requiere": [
+        "spoke_to_the_coal_woman"
+      ],
+      "_sobre_la_chistera": "El unico vecino que la lleva: es comerciante y se viste como tal.",
+      "ropa": {
+        "abrigo": [
+          0.18,
+          0.29,
+          0.24
+        ],
+        "pantalon": [
+          0.2,
+          0.22,
+          0.21
+        ],
+        "sombrero": [
+          0.1,
+          0.13,
+          0.12
+        ],
+        "cuello": [
+          0.94,
+          0.92,
+          0.86
+        ],
+        "chistera": true,
+        "alzacuellos": false,
+        "estatura": 1.04,
+        "inclinacion": -0.04,
+        "brazo_izquierdo": -0.15,
+        "brazo_derecho": 0.2
+      },
+      "tramo": "broad_sur",
+      "bahia": 12,
+      "cerrada": "No answer. The tailor keeps his door shut. Perhaps a neighbour knows why."
+    },
+    {
+      "numero": "40",
+      "dialogo": "ch1_s3_puerta_40",
+      "nombre": "Number forty",
+      "requiere": [
+        "dia_2"
+      ],
+      "_quien_abre": "Sarah Lewis, vestida igual que en la calle para que se reconozca.",
+      "ropa": {
+        "abrigo": [
+          0.26,
+          0.21,
+          0.24
+        ],
+        "pantalon": [
+          0.74,
+          0.71,
+          0.64
+        ],
+        "sombrero": [
+          0.3,
+          0.26,
+          0.26
+        ],
+        "cuello": [
+          0.7,
+          0.66,
+          0.6
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.94,
+        "inclinacion": 0.12,
+        "brazo_izquierdo": -0.42,
+        "brazo_derecho": -0.5
+      },
+      "tramo": "broad_sur",
+      "bahia": 13
+    },
+    {
+      "numero": "41",
+      "dialogo": "ch1_s3_coal_woman",
+      "nombre": "Number forty-one",
+      "requiere": [],
+      "ropa": {
+        "abrigo": [
+          0.15,
+          0.14,
+          0.14
+        ],
+        "pantalon": [
+          0.19,
+          0.17,
+          0.16
+        ],
+        "sombrero": [
+          0.12,
+          0.11,
+          0.11
+        ],
+        "cuello": [
+          0.45,
+          0.42,
+          0.38
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.86,
+        "inclinacion": 0.2,
+        "brazo_izquierdo": 0.12,
+        "brazo_derecho": 0.1
+      },
+      "tramo": "broad_sur",
+      "bahia": 14
+    },
+    {
+      "numero": "12",
+      "dialogo": "ch1_s3_cambridge_lavandera",
+      "nombre": "Number twelve",
+      "requiere": [
+        "dia_2"
+      ],
+      "_quien": "La lavandera: grande, colorada, mangas subidas, sin chal.",
+      "ropa": {
+        "abrigo": [
+          0.42,
+          0.5,
+          0.55
+        ],
+        "pantalon": [
+          0.33,
+          0.35,
+          0.36
+        ],
+        "sombrero": [
+          0.72,
+          0.7,
+          0.66
+        ],
+        "cuello": [
+          0.88,
+          0.86,
+          0.8
+        ],
+        "chistera": false,
+        "chal": false,
+        "alzacuellos": false,
+        "estatura": 1.02,
+        "inclinacion": -0.06,
+        "brazo_izquierdo": 0.34,
+        "brazo_derecho": 0.3
+      },
+      "tramo": "cambridge_oeste",
+      "bahia": 2
+    },
+    {
+      "numero": "14",
+      "dialogo": "ch1_s3_cambridge_nadie",
+      "nombre": "Number fourteen",
+      "requiere": [
+        "dia_2"
+      ],
+      "_quien": "Viejo encorvado, todo de pardo: el más bajo del barrio.",
+      "ropa": {
+        "abrigo": [
+          0.36,
+          0.31,
+          0.26
+        ],
+        "pantalon": [
+          0.29,
+          0.26,
+          0.23
+        ],
+        "sombrero": [
+          0.25,
+          0.22,
+          0.19
+        ],
+        "cuello": [
+          0.6,
+          0.57,
+          0.5
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 0.82,
+        "inclinacion": 0.42,
+        "brazo_izquierdo": 0.1,
+        "brazo_derecho": 0.06
+      },
+      "tramo": "cambridge_este",
+      "bahia": 1
+    },
+    {
+      "numero": "16",
+      "dialogo": "ch1_s3_cambridge_cervecero",
+      "nombre": "Number sixteen",
+      "requiere": [
+        "dia_2"
+      ],
+      "_quien": "Mozo de la cervecería: delantal de cuero, camisa clara, el más alto.",
+      "ropa": {
+        "abrigo": [
+          0.62,
+          0.45,
+          0.24
+        ],
+        "pantalon": [
+          0.24,
+          0.22,
+          0.2
+        ],
+        "sombrero": [
+          0.4,
+          0.3,
+          0.18
+        ],
+        "cuello": [
+          0.93,
+          0.9,
+          0.84
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 1.14,
+        "inclinacion": -0.02,
+        "brazo_izquierdo": -0.2,
+        "brazo_derecho": 0.42
+      },
+      "tramo": "cambridge_oeste",
+      "bahia": 4,
+      "_porte": "La cervecería: nave ancha y alta con el nombre pintado, no una casa.",
+      "_interior": "Taberna abierta de noche: se entra, se cruza la sala y se habla en la barra.",
+      "interior": "res://scenes/world/cerveceria.tscn",
+      "porte": {
+        "bahias": 2,
+        "plantas": 4,
+        "rotulo": "HUGGINS BREWERY"
+      }
+    },
+    {
+      "numero": "5",
+      "dialogo": "ch1_s3_peter_viuda",
+      "nombre": "Number five",
+      "requiere": [
+        "dia_3"
+      ],
+      "_quien": "Una viuda de negro entero, la unica del barrio sin una sola prenda clara encima.",
+      "ropa": {
+        "abrigo": [
+          0.14,
+          0.13,
+          0.15
+        ],
+        "pantalon": [
+          0.16,
+          0.15,
+          0.16
+        ],
+        "sombrero": [
+          0.1,
+          0.1,
+          0.12
+        ],
+        "cuello": [
+          0.22,
+          0.21,
+          0.22
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.9,
+        "inclinacion": 0.26,
+        "brazo_izquierdo": -0.1,
+        "brazo_derecho": -0.14
+      },
+      "tramo": "peter_oeste",
+      "bahia": 0
+    },
+    {
+      "numero": "7",
+      "dialogo": "ch1_s3_peter_asilo",
+      "nombre": "Number seven",
+      "requiere": [
+        "dia_3"
+      ],
+      "_quien": "Portero del asilo de Marshall Street: uniforme azul, cuello de latón.",
+      "ropa": {
+        "abrigo": [
+          0.2,
+          0.27,
+          0.45
+        ],
+        "pantalon": [
+          0.18,
+          0.21,
+          0.3
+        ],
+        "sombrero": [
+          0.14,
+          0.18,
+          0.3
+        ],
+        "cuello": [
+          0.8,
+          0.72,
+          0.42
+        ],
+        "chistera": true,
+        "alzacuellos": false,
+        "estatura": 1.08,
+        "inclinacion": -0.08,
+        "brazo_izquierdo": -0.06,
+        "brazo_derecho": -0.06
+      },
+      "tramo": "peter_este",
+      "bahia": 1,
+      "_porte": "El asilo: 535 personas y 5 muertos (2 ya enfermos al entrar).",
+      "_por_que_no_es_mas_ancho": "Bahías 14 y 16 son puertas; para ensancharlo, pasar la casera a la 17.",
+      "porte": {
+        "bahias": 1,
+        "plantas": 4,
+        "rotulo": "WORKHOUSE"
+      }
+    },
+    {
+      "numero": "9",
+      "dialogo": "ch1_s3_peter_casera",
+      "nombre": "Number nine",
+      "requiere": [
+        "dia_3"
+      ],
+      "_quien": "La casera: vestido granate, chal caído de un hombro.",
+      "ropa": {
+        "abrigo": [
+          0.5,
+          0.2,
+          0.3
+        ],
+        "pantalon": [
+          0.3,
+          0.22,
+          0.24
+        ],
+        "sombrero": [
+          0.36,
+          0.16,
+          0.24
+        ],
+        "cuello": [
+          0.86,
+          0.82,
+          0.76
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.98,
+        "inclinacion": -0.1,
+        "brazo_izquierdo": 0.5,
+        "brazo_derecho": -0.36
+      },
+      "tramo": "peter_oeste",
+      "bahia": 2
+    }
+  ],
+  "_esquinas": "La salida del barrio: pensamiento y dos burbujas. Ver opciones_en_el_mundo.gd.",
+  "esquinas": [
+    {
+      "casa": true,
+      "pos": [
+        -42.5,
+        -3.4
+      ],
+      "nombre": "St Luke's Rectory",
+      "decision": {
+        "opciones": [
+          "Go home",
+          "Not yet"
+        ],
+        "escena": "res://scenes/world/rectoria.tscn"
+      },
+      "_es": "Rectoría de St Luke, bahía 3 de Broad St. Escenografía: la real no estaba allí.",
+      "portal": {
+        "tramo": "broad_sur",
+        "bahia": 3,
+        "rotulo": "ST LUKE'S RECTORY"
+      },
+      "_pos": "pos es donde acaba el rastro de luces: la acera delante de la puerta. La puerta en si la coloca portal."
+    }
+  ],
+  "vecinos": [
+    {
+      "id": "NewVendedorFruta",
+      "nombre": "A man at a stall",
+      "ropa": {
+        "abrigo": [
+          0.34,
+          0.46,
+          0.3
+        ],
+        "pantalon": [
+          0.28,
+          0.3,
+          0.24
+        ],
+        "sombrero": [
+          0.26,
+          0.36,
+          0.22
+        ],
+        "cuello": [
+          0.82,
+          0.8,
+          0.7
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 1.04,
+        "inclinacion": 0.08,
+        "brazo_izquierdo": 0.4,
+        "brazo_derecho": -0.44
+      },
+      "pos": [
+        -40.6,
+        4.9
+      ]
+    },
+    {
+      "id": "NewDosMujeres",
+      "nombre": "A woman with a basket",
+      "ropa": {
+        "abrigo": [
+          0.62,
+          0.4,
+          0.46
+        ],
+        "pantalon": [
+          0.34,
+          0.3,
+          0.3
+        ],
+        "sombrero": [
+          0.48,
+          0.3,
+          0.36
+        ],
+        "cuello": [
+          0.88,
+          0.84,
+          0.78
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.94,
+        "inclinacion": 0.12,
+        "brazo_izquierdo": -0.5,
+        "brazo_derecho": 0.2,
+        "gesto": 0.22
+      },
+      "pos": [
+        -33.6,
+        4.3
+      ]
+    },
+    {
+      "id": "NewChicoRecados",
+      "nombre": "An errand boy",
+      "ropa": {
+        "abrigo": [
+          0.4,
+          0.34,
+          0.5
+        ],
+        "pantalon": [
+          0.3,
+          0.28,
+          0.34
+        ],
+        "sombrero": [
+          0.28,
+          0.24,
+          0.36
+        ],
+        "cuello": [
+          0.7,
+          0.68,
+          0.64
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 0.76,
+        "inclinacion": -0.06,
+        "brazo_izquierdo": 0.55,
+        "brazo_derecho": -0.5
+      },
+      "pos": [
+        -26.4,
+        1.4
+      ]
+    },
+    {
+      "id": "BroadMurmurador",
+      "_es": "El hombre del bordillo: da el número 40 y se marcha.",
+      "dialogo": "ch1_s3_murmurer",
+      "nombre": "A man muttering at the kerb",
+      "distancia": 1.9,
+      "burbuja": true,
+      "se_marcha": {
+        "bandera": "knows_the_garment_womans_house",
+        "destino": [
+          -21,
+          -3.4
+        ]
+      },
+      "ropa": {
+        "abrigo": [
+          0.17,
+          0.17,
+          0.18
+        ],
+        "pantalon": [
+          0.22,
+          0.2,
+          0.18
+        ],
+        "sombrero": [
+          0.12,
+          0.12,
+          0.12
+        ],
+        "cuello": [
+          0.86,
+          0.8,
+          0.66
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 0.98,
+        "inclinacion": 0.22,
+        "brazo_izquierdo": 0.22,
+        "brazo_derecho": 0.18,
+        "gesto": 0.12,
+        "quien": "murmurer"
+      },
+      "pos": [
+        -4.2,
+        -3.2
+      ]
+    },
+    {
+      "id": "BroadSarahLewis",
+      "burbuja": true,
+      "_es": "Sarah Lewis, sin luz ni sonido propios. El cubo es un prop aparte y se queda.",
+      "dialogo": "ch1_s1_lewis",
+      "nombre": "A woman on the step",
+      "se_marcha": {
+        "bandera": "saw_the_lewis_door",
+        "destino": [
+          7.5,
+          -5.1
+        ],
+        "velocidad": 1.4,
+        "espera": 1.2
+      },
+      "ropa": {
+        "abrigo": [
+          0.26,
+          0.21,
+          0.24
+        ],
+        "pantalon": [
+          0.74,
+          0.71,
+          0.64
+        ],
+        "sombrero": [
+          0.3,
+          0.26,
+          0.26
+        ],
+        "cuello": [
+          0.7,
+          0.66,
+          0.6
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.94,
+        "inclinacion": 0.12,
+        "brazo_izquierdo": -0.42,
+        "brazo_derecho": -0.5,
+        "quien": "sarah_lewis"
+      },
+      "pos": [
+        7.95,
+        -4.5
+      ]
+    },
+    {
+      "id": "BroadVecinaPuesto",
+      "nombre": "A woman at the stall",
+      "ropa": {
+        "abrigo": [
+          0.56,
+          0.23,
+          0.19
+        ],
+        "pantalon": [
+          0.3,
+          0.24,
+          0.22
+        ],
+        "sombrero": [
+          0.44,
+          0.22,
+          0.2
+        ],
+        "cuello": [
+          0.8,
+          0.76,
+          0.68
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.9,
+        "inclinacion": 0.38,
+        "brazo_izquierdo": -0.55,
+        "brazo_derecho": -0.62,
+        "gesto": 0.18
+      },
+      "pos": [
+        -8.6,
+        4.6
+      ]
+    },
+    {
+      "id": "BroadCarretero",
+      "nombre": "A carter",
+      "ropa": {
+        "abrigo": [
+          0.5,
+          0.41,
+          0.23
+        ],
+        "pantalon": [
+          0.31,
+          0.27,
+          0.2
+        ],
+        "sombrero": [
+          0.34,
+          0.28,
+          0.16
+        ],
+        "cuello": [
+          0.55,
+          0.5,
+          0.4
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 1.12,
+        "inclinacion": 0.1,
+        "brazo_izquierdo": -0.9,
+        "brazo_derecho": 0.35
+      },
+      "pos": [
+        8.2,
+        2.6
+      ]
+    },
+    {
+      "id": "BroadChavalBomba",
+      "nombre": "A boy with a bucket",
+      "ropa": {
+        "abrigo": [
+          0.27,
+          0.38,
+          0.47
+        ],
+        "pantalon": [
+          0.25,
+          0.28,
+          0.31
+        ],
+        "sombrero": [
+          0.18,
+          0.24,
+          0.29
+        ],
+        "cuello": [
+          0.62,
+          0.62,
+          0.58
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 0.72,
+        "inclinacion": 0.05,
+        "brazo_izquierdo": -0.4,
+        "brazo_derecho": -0.4
+      },
+      "pos": [
+        -1.6,
+        1.5
+      ]
+    },
+    {
+      "id": "BroadVecinaAcera",
+      "nombre": "Two women talking",
+      "ropa": {
+        "abrigo": [
+          0.38,
+          0.28,
+          0.5
+        ],
+        "pantalon": [
+          0.27,
+          0.24,
+          0.26
+        ],
+        "sombrero": [
+          0.26,
+          0.18,
+          0.32
+        ],
+        "cuello": [
+          0.82,
+          0.78,
+          0.72
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.96,
+        "inclinacion": -0.08,
+        "brazo_izquierdo": 0.62,
+        "brazo_derecho": -0.28,
+        "gesto": 0.3
+      },
+      "pos": [
+        6.4,
+        -3.4
+      ]
+    },
+    {
+      "id": "CamMujerDelPortal",
+      "nombre": "A woman in a doorway",
+      "ropa": {
+        "abrigo": [
+          0.3,
+          0.42,
+          0.34
+        ],
+        "pantalon": [
+          0.28,
+          0.3,
+          0.27
+        ],
+        "sombrero": [
+          0.22,
+          0.32,
+          0.26
+        ],
+        "cuello": [
+          0.84,
+          0.82,
+          0.74
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.92,
+        "inclinacion": 0.16,
+        "brazo_izquierdo": -0.3,
+        "brazo_derecho": 0.44
+      },
+      "pos": [
+        48.4,
+        -3.3
+      ]
+    },
+    {
+      "id": "CamHombreDelCarro",
+      "nombre": "A man unloading",
+      "ropa": {
+        "abrigo": [
+          0.45,
+          0.36,
+          0.42
+        ],
+        "pantalon": [
+          0.26,
+          0.24,
+          0.26
+        ],
+        "sombrero": [
+          0.3,
+          0.24,
+          0.28
+        ],
+        "cuello": [
+          0.7,
+          0.66,
+          0.62
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 1.06,
+        "inclinacion": 0.3,
+        "brazo_izquierdo": 0.7,
+        "brazo_derecho": 0.66,
+        "gesto": 0.15
+      },
+      "pos": [
+        28.799999999999997,
+        1.8
+      ]
+    },
+    {
+      "id": "PeterNinaSentada",
+      "_es": "Sentada y sin nada que decir: no todos los vecinos hablan.",
+      "nombre": "A girl sitting on the kerb",
+      "ropa": {
+        "abrigo": [
+          0.55,
+          0.5,
+          0.35
+        ],
+        "pantalon": [
+          0.36,
+          0.33,
+          0.28
+        ],
+        "sombrero": [
+          0.42,
+          0.38,
+          0.26
+        ],
+        "cuello": [
+          0.78,
+          0.74,
+          0.66
+        ],
+        "chistera": false,
+        "chal": true,
+        "alzacuellos": false,
+        "estatura": 0.68,
+        "inclinacion": 0.34,
+        "brazo_izquierdo": 0.15,
+        "brazo_derecho": 0.15
+      },
+      "pos": [
+        56.6,
+        -2.9
+      ]
+    },
+    {
+      "id": "PeterHombreApoyado",
+      "nombre": "A man against the wall",
+      "ropa": {
+        "abrigo": [
+          0.24,
+          0.24,
+          0.2
+        ],
+        "pantalon": [
+          0.2,
+          0.19,
+          0.17
+        ],
+        "sombrero": [
+          0.18,
+          0.18,
+          0.15
+        ],
+        "cuello": [
+          0.68,
+          0.64,
+          0.54
+        ],
+        "chistera": false,
+        "gorra": true,
+        "alzacuellos": false,
+        "estatura": 1,
+        "inclinacion": 0.44,
+        "brazo_izquierdo": -0.68,
+        "brazo_derecho": -0.72
+      },
+      "pos": [
+        69.2,
+        -3.2
+      ]
+    }
+  ],
+  "props": [
+    {
+      "tipo": "farola",
+      "pos": [
+        -25,
+        -2.7
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -5,
+        -2.7
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        5,
+        -2.7
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        15,
+        -2.7
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        25,
+        -2.7
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -35,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -25,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -5,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        5,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        15,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        25,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        35,
+        2.9
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -17.7,
+        -15
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -12.3,
+        -25
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -17.7,
+        -29
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -12.3,
+        -38
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.8,
+      "pos": [
+        -25.5,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.8,
+      "pos": [
+        22.5,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.85,
+      "pos": [
+        -26.3,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "puesto_verde",
+      "solido": [
+        1.5,
+        1.9,
+        2.2
+      ],
+      "pos": [
+        -41,
+        5.9
+      ]
+    },
+    {
+      "tipo": "puesto_rojo",
+      "solido": [
+        1.5,
+        1.9,
+        2.2
+      ],
+      "pos": [
+        -30.5,
+        5.7
+      ]
+    },
+    {
+      "tipo": "carro",
+      "y": 0.04,
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        -23.5,
+        1.2
+      ]
+    },
+    {
+      "tipo": "carro_alto",
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        -36,
+        6.6
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.75,
+      "pos": [
+        -26.5,
+        6.5
+      ]
+    },
+    {
+      "_es": "La bomba, en la lista de props como una cosa más de la calle.",
+      "tipo": "bomba",
+      "dialogo": "ch1_pump",
+      "nombre": "The Broad Street pump",
+      "pos": [
+        -3,
+        0.6
+      ]
+    },
+    {
+      "_es": "El cubo de Sarah Lewis, aparte de ella para que se quede en el escalón.",
+      "tipo": "cubo",
+      "y": 0,
+      "pos": [
+        7.36,
+        -4.62
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.8,
+      "pos": [
+        25.5,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.8,
+      "pos": [
+        -2.5,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.8,
+      "pos": [
+        4.9,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.8,
+      "pos": [
+        17.5,
+        -3.5
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.7,
+      "pos": [
+        12.5,
+        6.4
+      ]
+    },
+    {
+      "tipo": "puesto_rojo",
+      "solido": [
+        1.5,
+        1.9,
+        2.2
+      ],
+      "pos": [
+        -9,
+        5.6
+      ]
+    },
+    {
+      "tipo": "puesto_verde",
+      "solido": [
+        1.5,
+        1.9,
+        2.2
+      ],
+      "pos": [
+        -2.5,
+        6.2
+      ]
+    },
+    {
+      "tipo": "carro_alto",
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        6.5,
+        5.8
+      ]
+    },
+    {
+      "tipo": "carro",
+      "y": 0.04,
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        9.5,
+        1.2
+      ]
+    },
+    {
+      "tipo": "carro",
+      "y": 0.04,
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        28.5,
+        0.9
+      ]
+    },
+    {
+      "tipo": "carro_alto",
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        44.5,
+        5.9
+      ]
+    },
+    {
+      "tipo": "carro",
+      "y": 0.04,
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        25.5,
+        6.2
+      ]
+    },
+    {
+      "tipo": "arbol",
+      "escala": 0.7,
+      "pos": [
+        33,
+        6.6
+      ]
+    },
+    {
+      "tipo": "puesto_verde",
+      "solido": [
+        1.5,
+        1.9,
+        2.2
+      ],
+      "pos": [
+        33.5,
+        6.4
+      ]
+    },
+    {
+      "tipo": "carro",
+      "y": 0.04,
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        60.5,
+        1.1
+      ]
+    },
+    {
+      "tipo": "carro_alto",
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        75.5,
+        6.1
+      ]
+    },
+    {
+      "tipo": "carro",
+      "y": 0.04,
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        55.5,
+        5.4
+      ]
+    },
+    {
+      "tipo": "carro_alto",
+      "giro": -90,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ],
+      "pos": [
+        69,
+        6.3
+      ]
+    },
+    {
+      "tipo": "carro",
+      "pos": [
+        -13.5,
+        -29
+      ],
+      "y": 0.04,
+      "giro": 0,
+      "solido": [
+        2.8,
+        1.3,
+        1.9
+      ]
+    },
+    {
+      "_es": "Lo que hay en un callejon y no en una calle.",
+      "tipo": "basura",
+      "pos": [
+        22.5,
+        -6.6
+      ]
+    },
+    {
+      "_es": "Lo que hay en un callejon y no en una calle.",
+      "tipo": "basura",
+      "pos": [
+        -8.6,
+        -27.5
+      ]
+    },
+    {
+      "_es": "La bomba de Peter Street, al fondo; sin diálogo.",
+      "tipo": "bomba_muda",
+      "pos": [
+        35,
+        -22.5
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        -31.4,
+        -17.5
+      ]
+    },
+    {
+      "tipo": "farola",
+      "pos": [
+        38.6,
+        -17.5
+      ]
+    }
+  ],
+  "_tandas": "Las puertas se abren por tandas, cada una con una bandera del juego.",
+  "_farolas_de_cambridge": "Cuatro faroles en Cambridge Street, alternando aceras.",
+  "_caja": "Caja del mundo: de -45 (paso a Marshall Street) a 40 (sin salida).",
+  "_placas": "Placas de calle a la altura que ve la cámara; la de Cambridge, en la esquina.",
+  "placas": [
+    {
+      "texto": "CAMBRIDGE ST",
+      "pos": [
+        -22.2,
+        2.72,
+        -4.93
+      ]
+    }
+  ],
+  "_direcciones": "Casas sin puerta: [tramo, bahía] o {casa, punto} en metros. Las puertas se numeran solas.",
+  "direcciones": {
+    "31 Broad Street": [
+      "broad_sur",
+      0
+    ],
+    "32 Broad Street": [
+      "broad_sur",
+      1
+    ],
+    "33 Broad Street": [
+      "broad_sur",
+      2
+    ],
+    "36 Broad Street": [
+      "broad_sur",
+      6
+    ],
+    "37 Broad Street": [
+      "broad_sur",
+      7
+    ],
+    "42 Broad Street": [
+      "broad_sur",
+      15
+    ],
+    "43 Broad Street": [
+      "broad_sur",
+      17
+    ],
+    "8 Cambridge Street": [
+      "cambridge_oeste",
+      0
+    ],
+    "10 Cambridge Street": [
+      "cambridge_oeste",
+      1
+    ],
+    "13 Cambridge Street": [
+      "cambridge_oeste",
+      3
+    ],
+    "9 Cambridge Street": [
+      "cambridge_este",
+      0
+    ],
+    "15 Cambridge Street": [
+      "cambridge_este",
+      2
+    ],
+    "17 Cambridge Street": [
+      "cambridge_este",
+      4
+    ],
+    "18 Cambridge Street": [
+      "cambridge_este",
+      5
+    ],
+    "3 Marshall Street": {
+      "casa": [
+        -64.5,
+        -20
+      ],
+      "punto": [
+        -68.5,
+        -20
+      ]
+    },
+    "24 Poland Street": {
+      "casa": [
+        64.5,
+        18
+      ],
+      "punto": [
+        68.5,
+        18
+      ]
+    },
+    "44 Broad Street": {
+      "casa": [
+        7.5,
+        11.5
+      ],
+      "punto": [
+        7.5,
+        7.6
+      ]
+    },
+    "45 Broad Street": {
+      "casa": [
+        2.5,
+        11.5
+      ],
+      "punto": [
+        2.5,
+        7.6
+      ]
+    },
+    "46 Broad Street": {
+      "casa": [
+        -2.5,
+        11.5
+      ],
+      "punto": [
+        -2.5,
+        7.6
+      ]
+    },
+    "47 Broad Street": {
+      "casa": [
+        -7.5,
+        11.5
+      ],
+      "punto": [
+        -7.5,
+        7.6
+      ]
+    },
+    "48 Broad Street": {
+      "casa": [
+        -12.5,
+        11.5
+      ],
+      "punto": [
+        -12.5,
+        7.6
+      ]
+    },
+    "49 Broad Street": {
+      "casa": [
+        -17.5,
+        11.5
+      ],
+      "punto": [
+        -17.5,
+        7.6
+      ]
+    },
+    "50 Broad Street": {
+      "casa": [
+        -22.5,
+        11.5
+      ],
+      "punto": [
+        -22.5,
+        7.6
+      ]
+    }
+  }
+}

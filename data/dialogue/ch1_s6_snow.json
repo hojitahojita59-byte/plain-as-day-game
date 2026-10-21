@@ -1,0 +1,205 @@
+{
+  "id": "ch1_s6_snow",
+  "descripcion": "I.6 · LLAMAN A LA PUERTA: JOHN SNOW. El cierre del Acto I. Snow no trae la respuesta: trae una libreta y una pregunta. El plano es el que hizo el jugador.",
+  "_compresion_historica": "Compresión: Snow y Whitehead no se conocieron esta noche (fue en 1854-55); se declara al final.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "presenta",
+  "nodos": {
+    "presenta": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "Doctor John Snow. Forgive the hour.",
+      "siguiente": "el_nombre"
+    },
+    "el_nombre": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "I know the name. You are the man who puts people to sleep for operations.",
+      "siguiente": "entre_otras"
+    },
+    "entre_otras": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "Among other things.",
+      "siguiente": "el_registro"
+    },
+    "el_registro": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "I heard you had been keeping a record. May I see it?",
+      "siguiente": "cerca_de_la_bomba"
+    },
+    "cerca_de_la_bomba": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "These deaths lie near the Broad Street pump. And you have written down where each house fetched its water.",
+      "camara": "plano",
+      "siguiente": "lo_estan"
+    },
+    "lo_estan": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "I have. Most of them from that pump.",
+      "siguiente": "el_agua"
+    },
+    "el_agua": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "I think the water deserves the blame.",
+      "opciones": [
+        {
+          "texto": "A smell has a centre too. This could be a map of the smell.",
+          "va_a": "objecion"
+        },
+        {
+          "texto": "If it is water, why has it spared houses beside the pump?",
+          "va_a": "perdonadas"
+        },
+        {
+          "texto": "(Say nothing. Let him go on.)",
+          "va_a": "silencio"
+        }
+      ]
+    },
+    "perdonadas": {
+      "hablante": "snow",
+      "retrato": "grave",
+      "texto": "Some of them, yes. I cannot tell you why yet.",
+      "siguiente": "objecion"
+    },
+    "silencio": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "You do not agree with me.",
+      "siguiente": "objecion"
+    },
+    "objecion": {
+      "hablante": "whitehead",
+      "retrato": "dudando",
+      "texto": "A smell has a centre too, Doctor. If something rotten lies beneath that corner, the deaths would thin out from it in this shape.",
+      "siguiente": "no_elige"
+    },
+    "no_elige": {
+      "hablante": "snow",
+      "retrato": "grave",
+      "texto": "You are right. This map does not choose between us.",
+      "siguiente": "pide_aire"
+    },
+    "pide_aire": {
+      "hablante": "snow",
+      "retrato": "grave",
+      "texto": "So show me something the air cannot explain. Someone who breathed it every day, and did not fall ill.",
+      "pide": {
+        "fichas": {
+          "f_cerveceria": "aire_cerveceria",
+          "f_asilo": "aire_asilo",
+          "f_casera": "aire_casera"
+        },
+        "otra": "no_sirve_aire",
+        "boton": "Show him a card from your notebook."
+      }
+    },
+    "aire_cerveceria": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "Seventy men, in the middle of it, and none of them dead. The air did not pass them by.",
+      "marca": [
+        "aire_explicado"
+      ],
+      "miasma": 0.8,
+      "siguiente": "pide_lejos"
+    },
+    "aire_asilo": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "535 people, a street from the pump, and five dead. If the air did this, it would have taken more than a hundred of them.",
+      "marca": [
+        "aire_explicado"
+      ],
+      "miasma": 0.8,
+      "siguiente": "pide_lejos"
+    },
+    "aire_casera": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "Eleven people under one roof, and no one dead. Did the air go round that house?",
+      "marca": [
+        "aire_explicado"
+      ],
+      "miasma": 0.8,
+      "siguiente": "pide_lejos"
+    },
+    "no_sirve_aire": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "That does not show me what I asked for. Someone who breathed that air every day, and did not fall ill.",
+      "siguiente": "pide_aire"
+    },
+    "pide_lejos": {
+      "hablante": "snow",
+      "retrato": "grave",
+      "texto": "And the other way round. Someone who never breathed that air, and still died.",
+      "pide": {
+        "fichas": {
+          "f_hampstead": "lejos_hampstead"
+        },
+        "otra": "no_sirve_lejos",
+        "boton": "Show him a card from your notebook."
+      }
+    },
+    "lejos_hampstead": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "Hampstead. Miles from here, and she had not set foot in Soho for months. She died in the same week, of the same thing.",
+      "marca": [
+        "lejos_explicado"
+      ],
+      "miasma": 0.72,
+      "siguiente": "la_pregunta"
+    },
+    "no_sirve_lejos": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "That does not show me what I asked for. Someone who was never in this street, and still died.",
+      "siguiente": "pide_lejos"
+    },
+    "la_pregunta": {
+      "hablante": "whitehead",
+      "retrato": "dudando",
+      "texto": "Then what do we look for?",
+      "variantes": [
+        {
+          "requiere": [
+            "aire_explicado",
+            "lejos_explicado"
+          ],
+          "texto": "Then the air cannot explain either of them. What can?"
+        }
+      ],
+      "siguiente": "el_agua_otra_vez"
+    },
+    "el_agua_otra_vez": {
+      "hablante": "snow",
+      "retrato": "explicando",
+      "texto": "Every house that drank from that pump, and every house that did not. Who fell ill, and who did not. We count them all.",
+      "marca": [
+        "met_snow",
+        "snow_asked_about_the_water"
+      ],
+      "siguiente": "trabajo"
+    },
+    "trabajo": {
+      "hablante": "whitehead",
+      "retrato": "convencido",
+      "texto": "Then we have work to do.",
+      "siguiente": "la_prueba"
+    },
+    "la_prueba": {
+      "hablante": "snow",
+      "retrato": "neutro",
+      "texto": "We do. We start tomorrow, at the pump.",
+      "escena": "res://scenes/ui/fin_capitulo.tscn"
+    }
+  },
+  "_pivote": "Snow pide pruebas y se le enseñan fichas. Lo del asilo sale de asilo_sin_muertes."
+}

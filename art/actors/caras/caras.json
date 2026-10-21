@@ -1,0 +1,189 @@
+{
+  "_es": "Lo escribe herramientas/generar_caras.js. No se edita a mano: se cambia el generador y se vuelve a correr. h00 es Whitehead y h01 es Snow.",
+  "hombres": 16,
+  "mujeres": 10,
+  "caras": [
+    {
+      "id": "h00",
+      "mujer": false,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h01",
+      "mujer": false,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "entradas"
+    },
+    {
+      "id": "h02",
+      "mujer": false,
+      "barba": "patillas",
+      "edad": 0,
+      "peinado": "entradas"
+    },
+    {
+      "id": "h03",
+      "mujer": false,
+      "barba": "completa",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h04",
+      "mujer": false,
+      "barba": "perilla",
+      "edad": 0,
+      "peinado": "recto"
+    },
+    {
+      "id": "h05",
+      "mujer": false,
+      "barba": "tres_dias",
+      "edad": 1,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h06",
+      "mujer": false,
+      "barba": "morsa",
+      "edad": 1,
+      "peinado": "entradas"
+    },
+    {
+      "id": "h07",
+      "mujer": false,
+      "barba": "ninguna",
+      "edad": 1,
+      "peinado": "entradas"
+    },
+    {
+      "id": "h08",
+      "mujer": false,
+      "barba": "bigote",
+      "edad": 1,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h09",
+      "mujer": false,
+      "barba": "patillas",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h10",
+      "mujer": false,
+      "barba": "completa",
+      "edad": 0,
+      "peinado": "recto"
+    },
+    {
+      "id": "h11",
+      "mujer": false,
+      "barba": "perilla",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h12",
+      "mujer": false,
+      "barba": "tres_dias",
+      "edad": 1,
+      "peinado": "entradas"
+    },
+    {
+      "id": "h13",
+      "mujer": false,
+      "barba": "morsa",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h14",
+      "mujer": false,
+      "barba": "ninguna",
+      "edad": 1,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "h15",
+      "mujer": false,
+      "barba": "bigote",
+      "edad": 1,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "m00",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "m01",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_medio"
+    },
+    {
+      "id": "m02",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "m03",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 1,
+      "peinado": "raya_medio"
+    },
+    {
+      "id": "m04",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "m05",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_lado"
+    },
+    {
+      "id": "m06",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_medio"
+    },
+    {
+      "id": "m07",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 1,
+      "peinado": "raya_medio"
+    },
+    {
+      "id": "m08",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_medio"
+    },
+    {
+      "id": "m09",
+      "mujer": true,
+      "barba": "ninguna",
+      "edad": 0,
+      "peinado": "raya_lado"
+    }
+  ]
+}

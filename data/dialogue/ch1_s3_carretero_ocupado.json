@@ -1,0 +1,12 @@
+{
+  "id": "ch1_s3_carretero_ocupado",
+  "descripcion": "El carretero, antes de saber de Hampstead.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "carter",
+      "retrato": "ocupado",
+      "texto": "Can not stop, Reverend. I have a long road ahead of me."
+    }
+  }
+}

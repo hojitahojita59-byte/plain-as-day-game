@@ -1,0 +1,46 @@
+{
+  "id": "ch1_s3_puerta_40",
+  "descripcion": "EL NUMERO 40, sabado. La nina tiene fiebre; Sarah pide que recen por ella. Muere esa noche.",
+  "_la_regla_de_esta_puerta": "No subrayar nada.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "knock",
+  "nodos": {
+    "knock": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Mrs Lewis. It is Mr Whitehead. I said I would come back.",
+      "siguiente": "abre"
+    },
+    "abre": {
+      "hablante": "sarah_lewis",
+      "retrato": "cansada",
+      "texto": "She is burning with fever, Reverend. She will not wake properly.",
+      "opciones": [
+        {
+          "texto": "Has a doctor seen her?",
+          "va_a": "doctor"
+        },
+        {
+          "texto": "Can I do anything?",
+          "va_a": "doctor"
+        }
+      ]
+    },
+    "doctor": {
+      "hablante": "sarah_lewis",
+      "retrato": "suave",
+      "texto": "There is nothing anyone can do. Please pray for her, Reverend. Please pray for my baby.",
+      "siguiente": "reza"
+    },
+    "reza": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "I will pray for her tonight."
+    },
+    "otra_vez": {
+      "hablante": "sarah_lewis",
+      "retrato": "cansada",
+      "texto": "Please, Reverend. Not now."
+    }
+  }
+}

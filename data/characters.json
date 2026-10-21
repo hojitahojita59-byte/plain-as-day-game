@@ -1,0 +1,223 @@
+{
+  "whitehead": {
+    "nombre": "Henry Whitehead",
+    "rol": "Coadjutor de St Luke, Soho. El jugador.",
+    "historico": true,
+    "retratos": [
+      "neutro",
+      "dudando",
+      "convencido",
+      "agotado"
+    ],
+    "billboard": "res://art/actors/whitehead/"
+  },
+  "snow": {
+    "nombre": "John Snow",
+    "rol": "Médico. El mentor.",
+    "historico": true,
+    "retratos": [
+      "neutro",
+      "explicando",
+      "frustrado",
+      "grave"
+    ],
+    "billboard": "res://art/actors/snow/"
+  },
+  "guardian_comerciante": {
+    "nombre": "A tradesman of the parish",
+    "rol": "Guardián. Heurística de disponibilidad: lo que da asco parece dañino.",
+    "historico": false,
+    "retratos": [
+      "seguro",
+      "molesto",
+      "cediendo"
+    ]
+  },
+  "guardian_medico": {
+    "nombre": "The parish surgeon",
+    "rol": "Guardián. Argumento de autoridad. Modelado sobre Edmund A. Parkes.",
+    "historico": false,
+    "basado_en": "Edmund A. Parkes, M.D.",
+    "retratos": [
+      "cortes",
+      "escéptico",
+      "pensativo"
+    ]
+  },
+  "guardian_moralista": {
+    "nombre": "The moralist",
+    "rol": "Guardián. Sesgo de clase y error de atribución.",
+    "historico": false,
+    "retratos": [
+      "altivo",
+      "indignado",
+      "callado"
+    ]
+  },
+  "guardian_numeros": {
+    "nombre": "The man of figures",
+    "rol": "Guardián. Rechazo de la muestra y exigencia de denominador.",
+    "historico": false,
+    "retratos": [
+      "calculando",
+      "objetando",
+      "asintiendo"
+    ]
+  },
+  "guardian_presidente": {
+    "nombre": "The chairman",
+    "rol": "Guardián. Sin sesgo. Plantea un coste real y no tiene refutación.",
+    "historico": false,
+    "retratos": [
+      "neutro",
+      "preocupado",
+      "decidiendo"
+    ]
+  },
+  "coal_woman": {
+    "nombre": "The coal woman",
+    "rol": "Tercera puerta. Siembra el dato raro de la cerveceria.",
+    "historico": false,
+    "retratos": [
+      "seca",
+      "extranada",
+      "pensativa"
+    ]
+  },
+  "tailor": {
+    "nombre": "The tailor",
+    "rol": "Segunda puerta. Entrega una muerte confirmada.",
+    "historico": false,
+    "retratos": [
+      "receloso",
+      "roto"
+    ]
+  },
+  "garment_woman": {
+    "nombre": "The woman who takes in garments",
+    "rol": "Primera puerta. Muerte confirmada y teoria del miasma.",
+    "historico": false,
+    "retratos": [
+      "cansada",
+      "segura",
+      "extranada"
+    ]
+  },
+  "murmurer": {
+    "nombre": "A man at the kerb",
+    "rol": "LLAVE de la escena 3: senala la casa. Sin el, las puertas no se abren.",
+    "historico": false,
+    "retratos": [
+      "hundido",
+      "senalando"
+    ]
+  },
+  "laundress": {
+    "nombre": "The laundress",
+    "rol": "Cambridge Street 12. Tres muertes de una sola casa: es la puerta que ensena que esto va por domicilios y no por personas sueltas.",
+    "historico": false,
+    "retratos": [
+      "seca",
+      "cansada"
+    ]
+  },
+  "old_man": {
+    "nombre": "An old man",
+    "rol": "Cambridge Street 14. NO DA NADA, y es amable. Una puerta vacia con alguien detras.",
+    "historico": false,
+    "retratos": [
+      "sordo"
+    ]
+  },
+  "brewery_man": {
+    "nombre": "A brewery man",
+    "rol": "Cambridge Street 16. Segunda voz, independiente, sobre la fabrica donde no ha caido nadie. No sabe por que y no lo relaciona con nada.",
+    "historico": false,
+    "retratos": [
+      "franco",
+      "extranado"
+    ]
+  },
+  "widow": {
+    "nombre": "A widow",
+    "rol": "Peter Street 5. La muerte que NO encaja: cae fuera del racimo y hay que asentarla igual.",
+    "historico": false,
+    "retratos": [
+      "seca",
+      "extranada"
+    ]
+  },
+  "workhouse_porter": {
+    "nombre": "The workhouse porter",
+    "rol": "Peter Street 7. El asilo de Marshall Street: 535 personas hacinadas y cinco muertos. La segunda ausencia del acto.",
+    "historico": false,
+    "retratos": [
+      "cortes",
+      "harto"
+    ]
+  },
+  "landlady": {
+    "nombre": "A landlady",
+    "rol": "Peter Street 9. Once personas bajo un techo y ni un caso. No se puede apuntar en ningun sitio, y eso es lo que ensena.",
+    "historico": false,
+    "retratos": [
+      "abierta"
+    ]
+  },
+  "shopkeeper": {
+    "nombre": "The shopkeeper",
+    "rol": "New Street 2. Dos muertes de la misma casa, y cree que la enfermedad esta en el aire de la calle.",
+    "historico": false,
+    "retratos": [
+      "ocupado",
+      "serio"
+    ]
+  },
+  "niece": {
+    "nombre": "A niece",
+    "rol": "New Street 4. La tia que se mudo a Hampstead en 1852 y se ha muerto igual. Whitehead no puede asentarla porque no es de su parroquia.",
+    "historico": false,
+    "retratos": [
+      "seria",
+      "suave",
+      "seca"
+    ]
+  },
+  "sarah_lewis": {
+    "nombre": "Sarah Lewis",
+    "rol": "Madre de la nina del numero 40. El caso indice del brote, y en el Acto I no lo sabe nadie: ni ella, ni Whitehead, ni el jugador.",
+    "_por_que_tiene_nombre": "Única vecina con nombre: persona real, madre de la niña del 40; vuelve en el Acto III.",
+    "historico": true,
+    "retratos": [
+      "cansada",
+      "seca",
+      "suave"
+    ]
+  },
+  "sexton": {
+    "nombre": "The sexton",
+    "rol": "Trae la lista de muertos en el carro; no opina.",
+    "historico": false,
+    "retratos": [
+      "neutro"
+    ]
+  },
+  "carter": {
+    "nombre": "The carter",
+    "rol": "Carretero de la fabrica de los Eley; sube agua de la bomba a Hampstead cada dia.",
+    "historico": false,
+    "retratos": [
+      "ocupado",
+      "serio"
+    ]
+  },
+  "eley_daughter": {
+    "nombre": "Miss Eley",
+    "rol": "Hija de la viuda Eley, en Hampstead.",
+    "historico": false,
+    "retratos": [
+      "seria",
+      "suave"
+    ]
+  }
+}

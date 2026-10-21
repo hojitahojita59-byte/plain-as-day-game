@@ -1,0 +1,164 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/goteo_bomba.gd" id="1_goteo"]
+[ext_resource type="AudioStream" path="res://audio/sfx/goteo.wav" id="2_goteo"]
+
+; Bomba de Broad Street. Origen abajo; el cano mira a +Z.
+
+[sub_resource type="StandardMaterial3D" id="Mat_piedra"]
+albedo_color = Color(0.54, 0.52, 0.47, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_hierro"]
+albedo_color = Color(0.44, 0.46, 0.48, 1)
+metallic = 0.4
+roughness = 0.55
+
+[sub_resource type="StandardMaterial3D" id="Mat_madera"]
+albedo_color = Color(0.56, 0.42, 0.28, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_agua"]
+albedo_color = Color(0.4, 0.47, 0.43, 0.8)
+metallic = 0.3
+roughness = 0.1
+transparency = 1
+
+[sub_resource type="CylinderMesh" id="Mesh_pedestal"]
+top_radius = 0.48
+bottom_radius = 0.6
+height = 0.3
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="Mesh_fuste"]
+size = Vector3(0.34, 2.0, 0.34)
+
+[sub_resource type="BoxMesh" id="Mesh_collarin"]
+size = Vector3(0.43, 0.1, 0.43)
+
+[sub_resource type="BoxMesh" id="Mesh_capitel"]
+size = Vector3(0.46, 0.17, 0.46)
+
+[sub_resource type="CylinderMesh" id="Mesh_remate"]
+top_radius = 0.05
+bottom_radius = 0.1
+height = 0.24
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="Mesh_cano"]
+size = Vector3(0.14, 0.14, 0.56)
+
+[sub_resource type="BoxMesh" id="Mesh_boca"]
+size = Vector3(0.14, 0.3, 0.14)
+
+[sub_resource type="BoxMesh" id="Mesh_palanca"]
+size = Vector3(0.1, 0.09, 1.15)
+
+[sub_resource type="CylinderMesh" id="Mesh_cubo"]
+top_radius = 0.24
+bottom_radius = 0.19
+height = 0.4
+radial_segments = 10
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="Mat_gota"]
+albedo_color = Color(0.62, 0.72, 0.7, 0.9)
+transparency = 1
+emission_enabled = true
+emission = Color(0.5, 0.6, 0.6, 1)
+emission_energy_multiplier = 0.4
+
+[sub_resource type="SphereMesh" id="Mesh_gota"]
+material = SubResource("Mat_gota")
+radius = 0.035
+height = 0.09
+radial_segments = 6
+rings = 3
+
+[sub_resource type="ParticleProcessMaterial" id="Proc_goteo"]
+particle_flag_align_y = true
+direction = Vector3(0, -1, 0)
+spread = 1.0
+initial_velocity_min = 0.05
+initial_velocity_max = 0.12
+gravity = Vector3(0, -9.8, 0)
+scale_min = 0.7
+scale_max = 1.0
+
+[node name="BombaBroadStreet" type="Node3D"]
+
+[node name="Pedestal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+mesh = SubResource("Mesh_pedestal")
+material_override = SubResource("Mat_piedra")
+
+[node name="Fuste" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0)
+mesh = SubResource("Mesh_fuste")
+material_override = SubResource("Mat_madera")
+
+[node name="CollarinBajo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0)
+mesh = SubResource("Mesh_collarin")
+material_override = SubResource("Mat_hierro")
+
+[node name="CollarinAlto" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.02, 0)
+mesh = SubResource("Mesh_collarin")
+material_override = SubResource("Mat_hierro")
+
+[node name="Capitel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.38, 0)
+mesh = SubResource("Mesh_capitel")
+material_override = SubResource("Mat_hierro")
+
+[node name="Remate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.58, 0)
+mesh = SubResource("Mesh_remate")
+material_override = SubResource("Mat_hierro")
+
+[node name="Cano" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62, 0.35)
+mesh = SubResource("Mesh_cano")
+material_override = SubResource("Mat_hierro")
+
+[node name="CanoBoca" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46, 0.56)
+mesh = SubResource("Mesh_boca")
+material_override = SubResource("Mat_hierro")
+
+[node name="Palanca" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0.24, 1.98, -0.36)
+mesh = SubResource("Mesh_palanca")
+material_override = SubResource("Mat_hierro")
+
+[node name="Cubo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.2, 0.62)
+mesh = SubResource("Mesh_cubo")
+material_override = SubResource("Mat_madera")
+
+[node name="Charco" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.7, 0, 0, 0, 0.05, 0, 0, 0, 2.2, 0.12, 0.075, 0.8)
+mesh = SubResource("Mesh_cubo")
+material_override = SubResource("Mat_agua")
+
+[node name="Goteo" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.29, 0.56)
+amount = 2
+lifetime = 1.8
+randomness = 0.35
+visibility_aabb = AABB(-0.4, -1.6, -0.4, 0.8, 2, 0.8)
+process_material = SubResource("Proc_goteo")
+draw_pass_1 = SubResource("Mesh_gota")
+
+; En el charco. unit_size 5 / max_distance 16: se oye en casi toda la calle.
+[node name="SonidoGoteo" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12, 0.1, 0.8)
+stream = ExtResource("2_goteo")
+volume_db = 0.0
+unit_size = 5.0
+max_distance = 16.0
+bus = &"Efectos"
+script = ExtResource("1_goteo")

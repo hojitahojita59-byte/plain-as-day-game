@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/interactable.gd" id="1_inter"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1"]
+size = Vector3(1.4, 2.4, 0.6)
+
+[node name="PuertaInteractuable" type="StaticBody3D"]
+script = ExtResource("1_inter")
+dialogue_id = ""
+display_name = "A door"
+stop_distance = 2.2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1")

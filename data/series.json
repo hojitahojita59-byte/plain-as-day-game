@@ -1,0 +1,62 @@
+{
+  "_note": "Series card: the menu and title screen read the game name only from here.",
+  "title": "PLAIN AS DAY",
+  "tagline": "",
+  "studio": "Snailock",
+  "events": [
+    {
+      "id": "soho_1854",
+      "name": "SOHO",
+      "place": "LONDON",
+      "year": "1854",
+      "host": "Henry Whitehead, curate of St Luke's",
+      "remembered": true,
+      "hue": "#7d8a4a",
+      "cinematic": "res://data/cinematicas/soho_1854.json",
+      "scene": "res://scenes/world/calle.tscn",
+      "chapters": [
+        {
+          "id": "ch1",
+          "name": "BROAD STREET",
+          "unlocked": true
+        },
+        {
+          "id": "ch2",
+          "name": "THOSE WHO DID NOT DIE",
+          "unlocked": false
+        },
+        {
+          "id": "ch3",
+          "name": "MIASMA",
+          "unlocked": false
+        }
+      ],
+      "lat": 51.5133,
+      "lon": -0.1367,
+      "description": "Cholera kills six hundred people in a few streets of Soho in under a month. Nobody agrees on what is doing it, and the men who could stop it are certain it is the air.",
+      "impact": "The house-by-house map drawn during this outbreak is where the whole of modern epidemiology starts. Every outbreak investigation since has been a version of it.",
+      "skills": [
+        "Reading a set of numbers without being fooled by it",
+        "Comparing two groups fairly",
+        "Telling a fact from the story somebody wrapped it in",
+        "Backing up anything you claim, and saying where it came from",
+        "Spotting an objection that is actually right"
+      ]
+    }
+  ],
+  "_note_fragments": "Fragments: one line, no name, no year, nothing playable.",
+  "fragments": [
+    "...tar, and cold water on stone.",
+    "...someone counting out loud in a language I do not have.",
+    "...a bell, and then nothing for a long time.",
+    "...the weight of a coat that is not mine.",
+    "...snow coming in under a door.",
+    "...a room where everyone is standing up.",
+    "...ink. My hands are covered in ink.",
+    "...they are burning something in the square.",
+    "...a name I am not allowed to say here.",
+    "...heat, and the sound of a great many engines.",
+    "...I am much older here.",
+    "...she is telling me I am wrong, and she is right."
+  ]
+}

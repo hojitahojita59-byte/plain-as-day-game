@@ -1,0 +1,30 @@
+{
+  "id": "ch1_s3_carretero",
+  "descripcion": "BROAD STREET. El carretero de la fabrica de los Eley sube a Hampstead cada dia; lleva a Whitehead.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "carter",
+      "retrato": "ocupado",
+      "texto": "Up to Hampstead, Reverend? I go up every day for the family.",
+      "opciones": [
+        {
+          "texto": "Will you take me with you?",
+          "va_a": "sube"
+        },
+        {
+          "texto": "I need to see her house.",
+          "va_a": "sube"
+        }
+      ]
+    },
+    "sube": {
+      "hablante": "carter",
+      "retrato": "serio",
+      "texto": "Climb up, then. Hold on tight, the road is bad.",
+      "marca": [
+        "al_carro"
+      ]
+    }
+  }
+}

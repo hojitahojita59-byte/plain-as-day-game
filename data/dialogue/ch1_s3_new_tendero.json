@@ -1,0 +1,91 @@
+{
+  "id": "ch1_s3_new_tendero",
+  "descripcion": "NEW STREET, 2. El tendero. Dos muertes confirmadas de la misma familia.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "shopkeeper",
+      "retrato": "ocupado",
+      "texto": "If you are collecting money, Reverend, it is a bad time.",
+      "opciones": [
+        {
+          "texto": "I have come about the deaths.",
+          "va_a": "las_dos"
+        },
+        {
+          "texto": "How is business?",
+          "va_a": "el_negocio"
+        }
+      ]
+    },
+    "el_negocio": {
+      "hablante": "shopkeeper",
+      "retrato": "ocupado",
+      "texto": "Bad. People are afraid to go out. They say the air in the street is what kills them.",
+      "marca": [
+        "heard_the_miasma_theory"
+      ],
+      "opciones": [
+        {
+          "texto": "I have come about the deaths.",
+          "va_a": "las_dos"
+        }
+      ]
+    },
+    "las_dos": {
+      "hablante": "shopkeeper",
+      "retrato": "serio",
+      "texto": "Two people upstairs. My wife's mother, Hannah Peel, died on Thursday. She was eighty-one. Our maid, Eliza Hart, died on Saturday. She was sixteen.",
+      "palabras": [
+        "hannah_peel",
+        "jueves",
+        "ochenta_y_uno",
+        "eliza_hart",
+        "sabado",
+        "dieciseis"
+      ],
+      "ficha": "f_2n",
+      "opciones": [
+        {
+          "texto": "Who fetched their water?",
+          "va_a": "el_agua"
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "adios"
+        }
+      ]
+    },
+    "el_agua": {
+      "hablante": "shopkeeper",
+      "retrato": "neutro",
+      "texto": "The girl went to the Broad Street pump for water. The Marshall Street pump is nearer, but my wife's mother said it tasted of the drains.",
+      "palabras": [
+        "agua_broad",
+        "agua_marshall"
+      ]
+    },
+    "adios": {
+      "hablante": "shopkeeper",
+      "retrato": "neutro",
+      "texto": "Good day, Reverend."
+    },
+    "otra_vez": {
+      "hablante": "shopkeeper",
+      "retrato": "neutro",
+      "texto": "Reverend.",
+      "opciones": [
+        {
+          "texto": "Who fetched the water upstairs?",
+          "va_a": "el_agua"
+        },
+        {
+          "texto": "Nothing. Good day.",
+          "va_a": "adios"
+        }
+      ]
+    }
+  },
+  "_pivote": "Dos muertes con nombre, edad y día; la ficha pide emparejarlas."
+}

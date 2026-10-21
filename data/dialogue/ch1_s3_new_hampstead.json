@@ -1,0 +1,44 @@
+{
+  "id": "ch1_s3_new_hampstead",
+  "descripcion": "NEW STREET, 4. La tia murio en Hampstead, a seis millas. La sobrina no sabe mas: lo sabe su casa de Hampstead, y el carro de la fabrica sube cada dia.",
+  "_de_que_va": "Va de la distancia; el agua se sabe en Hampstead.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "niece",
+      "retrato": "seria",
+      "texto": "No one in this house has died, Reverend. But my aunt has.",
+      "opciones": [
+        {
+          "texto": "What happened to your aunt?",
+          "va_a": "la_tia"
+        }
+      ]
+    },
+    "la_tia": {
+      "hablante": "niece",
+      "retrato": "seria",
+      "texto": "She died in Hampstead on Saturday. She had not set foot in Soho for months.",
+      "palabras": [
+        "hampstead",
+        "sabado"
+      ],
+      "ficha": "f_hampstead",
+      "siguiente": "el_carro"
+    },
+    "otra_vez": {
+      "hablante": "niece",
+      "retrato": "seria",
+      "texto": "The carter for the factory is in Broad Street, Reverend. He goes up to Hampstead every day."
+    },
+    "el_carro": {
+      "hablante": "niece",
+      "retrato": "suave",
+      "texto": "Her sons have the cap factory in Broad Street. Their carter drives up to her house every day. Ask him, if you want to know more.",
+      "marca": [
+        "sabe_de_hampstead"
+      ]
+    }
+  }
+}

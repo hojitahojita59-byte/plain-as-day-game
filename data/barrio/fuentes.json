@@ -1,0 +1,51 @@
+{
+  "id": "fuentes",
+  "_es": "Bombas y pozos. p en metros del mundo (x, z).",
+  "fuentes": [
+    {
+      "id": "broad",
+      "palabra": "agua_broad",
+      "p": [
+        -3,
+        0.6
+      ],
+      "tipo": "bomba"
+    },
+    {
+      "id": "marshall",
+      "palabra": "agua_marshall",
+      "p": [
+        -72,
+        -20
+      ],
+      "tipo": "bomba"
+    },
+    {
+      "id": "peter",
+      "palabra": "agua_peter",
+      "p": [
+        35,
+        -22.5
+      ],
+      "tipo": "bomba"
+    },
+    {
+      "id": "pozo_cerveceria",
+      "palabra": "pozo_cerveceria",
+      "p": [
+        -22.5,
+        -35
+      ],
+      "tipo": "pozo"
+    },
+    {
+      "id": "pozo_asilo",
+      "palabra": "pozo_asilo",
+      "p": [
+        42.5,
+        -17.5
+      ],
+      "tipo": "pozo"
+    }
+  ]
+}

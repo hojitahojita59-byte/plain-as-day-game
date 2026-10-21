@@ -1,0 +1,21 @@
+{
+  "id": "ch1_s3_cambridge_nadie",
+  "descripcion": "CAMBRIDGE STREET, 14. La puerta que no da nada. Abre, contesta, y no sabe nada. Dos lineas.",
+  "_regla": "Puerta que no da nada: corta, para no costar tiempo.",
+  "_por_que_no_se_queda_callado": "Contesta aunque no sepa nada: un silencio parecería un fallo.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "old_man",
+      "retrato": "sordo",
+      "texto": "No one has died here, sir. I live alone.",
+      "siguiente": ""
+    },
+    "otra_vez": {
+      "hablante": "old_man",
+      "retrato": "sordo",
+      "texto": "Eh? Good night, sir."
+    }
+  }
+}

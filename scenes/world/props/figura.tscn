@@ -1,0 +1,151 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/figura_andante.gd" id="1_andar"]
+
+; Figura de cajas provisional. Pivotes en la articulacion; origen en los pies.
+
+[sub_resource type="StandardMaterial3D" id="Mat_abrigo"]
+albedo_color = Color(0.27, 0.27, 0.31, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_pantalon"]
+albedo_color = Color(0.31, 0.28, 0.26, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_cuello"]
+albedo_color = Color(0.93, 0.91, 0.85, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_piel"]
+albedo_color = Color(0.82, 0.62, 0.48, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_sombrero"]
+albedo_color = Color(0.16, 0.15, 0.18, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="Mesh_torso"]
+size = Vector3(0.44, 0.6, 0.26)
+
+[sub_resource type="BoxMesh" id="Mesh_faldon"]
+size = Vector3(0.48, 0.34, 0.3)
+
+[sub_resource type="BoxMesh" id="Mesh_brazo"]
+size = Vector3(0.13, 0.56, 0.15)
+
+[sub_resource type="BoxMesh" id="Mesh_pierna"]
+size = Vector3(0.16, 0.8, 0.18)
+
+[sub_resource type="BoxMesh" id="Mesh_cuello"]
+size = Vector3(0.26, 0.09, 0.22)
+
+[sub_resource type="BoxMesh" id="Mesh_cabeza"]
+size = Vector3(0.22, 0.25, 0.22)
+
+[sub_resource type="CylinderMesh" id="Mesh_copa"]
+top_radius = 0.115
+bottom_radius = 0.12
+height = 0.22
+radial_segments = 10
+rings = 1
+
+[sub_resource type="BoxMesh" id="Mesh_gorra"]
+size = Vector3(0.25, 0.1, 0.26)
+
+[sub_resource type="BoxMesh" id="Mesh_visera"]
+size = Vector3(0.24, 0.03, 0.12)
+
+[sub_resource type="BoxMesh" id="Mesh_chal"]
+size = Vector3(0.54, 0.36, 0.34)
+
+[sub_resource type="CylinderMesh" id="Mesh_ala"]
+top_radius = 0.2
+bottom_radius = 0.2
+height = 0.03
+radial_segments = 12
+rings = 1
+
+[node name="Figura" type="Node3D"]
+script = ExtResource("1_andar")
+
+[node name="Cuerpo" type="Node3D" parent="."]
+
+[node name="Faldon" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93, 0)
+mesh = SubResource("Mesh_faldon")
+material_override = SubResource("Mat_abrigo")
+
+[node name="Torso" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.16, 0)
+mesh = SubResource("Mesh_torso")
+material_override = SubResource("Mat_abrigo")
+
+[node name="Cuello" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+mesh = SubResource("Mesh_cuello")
+material_override = SubResource("Mat_cuello")
+
+[node name="Cabeza" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.67, 0)
+mesh = SubResource("Mesh_cabeza")
+material_override = SubResource("Mat_piel")
+
+[node name="SombreroAla" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.79, 0)
+mesh = SubResource("Mesh_ala")
+material_override = SubResource("Mat_sombrero")
+
+[node name="SombreroCopa" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.91, 0)
+mesh = SubResource("Mesh_copa")
+material_override = SubResource("Mat_sombrero")
+
+[node name="Gorra" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.83, 0)
+visible = false
+mesh = SubResource("Mesh_gorra")
+material_override = SubResource("Mat_sombrero")
+
+[node name="Visera" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.79, 0.17)
+visible = false
+mesh = SubResource("Mesh_visera")
+material_override = SubResource("Mat_sombrero")
+
+[node name="Chal" type="MeshInstance3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28, 0)
+visible = false
+mesh = SubResource("Mesh_chal")
+material_override = SubResource("Mat_abrigo")
+
+[node name="HombroIzq" type="Node3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.285, 1.42, 0)
+
+[node name="Brazo" type="MeshInstance3D" parent="Cuerpo/HombroIzq"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.28, 0)
+mesh = SubResource("Mesh_brazo")
+material_override = SubResource("Mat_abrigo")
+
+[node name="HombroDer" type="Node3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.285, 1.42, 0)
+
+[node name="Brazo" type="MeshInstance3D" parent="Cuerpo/HombroDer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.28, 0)
+mesh = SubResource("Mesh_brazo")
+material_override = SubResource("Mat_abrigo")
+
+[node name="CaderaIzq" type="Node3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.115, 0.8, 0)
+
+[node name="Pierna" type="MeshInstance3D" parent="Cuerpo/CaderaIzq"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+mesh = SubResource("Mesh_pierna")
+material_override = SubResource("Mat_pantalon")
+
+[node name="CaderaDer" type="Node3D" parent="Cuerpo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.115, 0.8, 0)
+
+[node name="Pierna" type="MeshInstance3D" parent="Cuerpo/CaderaDer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+mesh = SubResource("Mesh_pierna")
+material_override = SubResource("Mat_pantalon")

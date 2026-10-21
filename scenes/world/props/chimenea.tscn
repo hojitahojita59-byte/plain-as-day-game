@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3]
+
+; Chimenea de ladrillo. Origen abajo.
+
+[sub_resource type="StandardMaterial3D" id="Mat_ladrillo"]
+albedo_color = Color(0.58, 0.34, 0.26, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_albardilla"]
+albedo_color = Color(0.55, 0.52, 0.46, 1)
+roughness = 1.0
+
+[sub_resource type="StandardMaterial3D" id="Mat_canon"]
+albedo_color = Color(0.66, 0.36, 0.24, 1)
+roughness = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_tronco"]
+size = Vector3(1.8, 1.9, 0.9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_albardilla"]
+size = Vector3(2, 0.2, 1.1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_canon"]
+top_radius = 0.14
+bottom_radius = 0.16
+height = 0.6
+
+[node name="Chimenea" type="Node3D"]
+
+[node name="Tronco" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
+mesh = SubResource("BoxMesh_tronco")
+material_override = SubResource("Mat_ladrillo")
+
+[node name="Albardilla" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("BoxMesh_albardilla")
+material_override = SubResource("Mat_albardilla")
+
+[node name="Canon1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 2.4, 0)
+mesh = SubResource("CylinderMesh_canon")
+material_override = SubResource("Mat_canon")
+
+[node name="Canon2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4, 0)
+mesh = SubResource("CylinderMesh_canon")
+material_override = SubResource("Mat_canon")
+
+[node name="Canon3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55, 2.4, 0)
+mesh = SubResource("CylinderMesh_canon")
+material_override = SubResource("Mat_canon")

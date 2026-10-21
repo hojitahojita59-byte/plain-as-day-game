@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: la de las prendas. Editar aqui, no en la calle.
+
+[node name="FiguraMujerPrendas" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.68, 0.62, 0.48, 1)
+color_pantalon = Color(0.44, 0.40, 0.33, 1)
+color_sombrero = Color(0.58, 0.52, 0.40, 1)
+color_cuello = Color(0.90, 0.88, 0.82, 1)
+lleva_chistera = false
+lleva_chal = true
+lleva_alzacuellos = false
+estatura = 1.00
+inclinacion = 0.02
+brazo_izquierdo = 0.18
+brazo_derecho = -0.08

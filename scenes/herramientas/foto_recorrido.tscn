@@ -1,0 +1,6 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/herramientas/foto_recorrido.gd" id="1"]
+
+[node name="FotoRecorrido" type="Node"]
+script = ExtResource("1")

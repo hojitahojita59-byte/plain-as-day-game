@@ -1,0 +1,15 @@
+{
+  "id": "ch1_pump",
+  "descripcion": "Examinar la bomba en el Capítulo I. Es DELIBERADAMENTE sosa. Antes tenía tres líneas y una de ellas decía que venía gente de dos calles más allá por el sabor del agua: eso es señalar al culpable en la primera hora de juego. La bomba tiene que ser mobiliario urbano hasta el Capítulo II. Que el jugador pase veinte veces por delante sin sospechar es el efecto que buscamos, y para eso hay que resistirse a escribir aquí.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "look",
+  "nodos": {
+    "look": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Only a pump.",
+      "estilo": "objeto",
+      "siguiente": ""
+    }
+  }
+}

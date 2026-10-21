@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3]
+
+; La rectoria: estudio, salita, cocina y escalera (Constructor). Sin navmesh: no se recorre.
+
+[ext_resource type="Script" path="res://scripts/world/art_style.gd" id="1_estilo"]
+[ext_resource type="Script" path="res://scripts/world/scene_info.gd" id="2_info"]
+[ext_resource type="Script" path="res://scripts/world/constructor_rectoria.gd" id="3_constructor"]
+[ext_resource type="Script" path="res://scripts/world/llegada_a_casa.gd" id="4_llegada"]
+[ext_resource type="Script" path="res://scripts/world/sentado_a_la_mesa.gd" id="5_sentado"]
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="6_figura"]
+[ext_resource type="Script" path="res://scripts/world/llaman_a_la_puerta.gd" id="7_snow"]
+
+[sub_resource type="Environment" id="Env_rectoria"]
+background_mode = 1
+background_color = Color(0.05, 0.05, 0.06, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.40, 0.35, 0.30, 1)
+ambient_light_energy = 0.56
+tonemap_mode = 3
+tonemap_white = 2.0
+ssao_enabled = true
+ssao_radius = 1.1
+ssao_intensity = 1.8
+glow_enabled = true
+glow_levels/2 = 1.0
+glow_levels/3 = 1.0
+glow_levels/4 = 0.6
+glow_intensity = 0.22
+glow_strength = 1.05
+glow_bloom = 0.02
+glow_hdr_threshold = 1.7
+
+[node name="Rectoria3D" type="Node3D"]
+script = ExtResource("2_info")
+scene_id = "ch1_s2_rectoria"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Env_rectoria")
+
+; Quinque: luz de la mesa, sin sombras.
+[node name="Quinque" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72, 1.3, -1.42)
+light_color = Color(1, 0.86, 0.62, 1)
+light_energy = 1.5
+omni_range = 4.0
+omni_attenuation = 1.4
+
+; Ventana: solo para que no sea un hueco negro.
+[node name="Ventana" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9, -1.95)
+light_color = Color(0.55, 0.68, 0.88, 1)
+light_energy = 1.1
+omni_range = 4.5
+
+[node name="Cuarto" type="Node3D" parent="."]
+
+[node name="Whitehead" type="Node3D" parent="."]
+
+[node name="Figura" parent="Whitehead" instance=ExtResource("6_figura")]
+lleva_chistera = true
+lleva_alzacuellos = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+fov = 62.0
+
+[node name="Constructor" type="Node" parent="."]
+script = ExtResource("3_constructor")
+
+[node name="Llegada" type="Node3D" parent="."]
+script = ExtResource("4_llegada")
+
+[node name="Sentado" type="Node3D" parent="."]
+script = ExtResource("5_sentado")
+
+; I.6: Snow llama a la puerta. No hace nada si no toca (ver llaman_a_la_puerta.gd).
+[node name="Snow" type="Node3D" parent="."]
+script = ExtResource("7_snow")
+
+[node name="EstiloArtistico" type="Node3D" parent="."]
+script = ExtResource("1_estilo")
+skip_names = PackedStringArray("Sombra")

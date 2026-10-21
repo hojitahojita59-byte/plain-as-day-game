@@ -1,0 +1,47 @@
+{
+  "id": "dias",
+  "_es": "Los tres días del Acto I. Puertas: las abre la bandera dia_N (soho.json).",
+  "dias": [
+    {
+      "titulo": "Friday, 1 September",
+      "manana": "The bell has rung all night. There are black ribbons on two doors in Broad Street.",
+      "campana": 7,
+      "lazos": [
+        "38",
+        "39"
+      ],
+      "termina": [
+        "hablado_ch1_s3_garment_woman",
+        "hablado_ch1_s3_coal_woman",
+        "hablado_ch1_s3_tailor",
+        "lista_1",
+        "hablado_ch1_s1_lewis"
+      ]
+    },
+    {
+      "titulo": "Saturday, 2 September",
+      "manana": "More ribbons this morning.",
+      "campana": 10,
+      "lazos": [
+        "12"
+      ],
+      "termina": [
+        "hablado_ch1_s3_puerta_40",
+        "hablado_ch1_s3_cambridge_lavandera",
+        "hablado_ch1_s3_cambridge_nadie",
+        "hablado_ch1_s3_cambridge_cervecero"
+      ]
+    },
+    {
+      "titulo": "Sunday, 3 September",
+      "manana": "There is a black ribbon on number 40 this morning.",
+      "campana": 10,
+      "lazos": [
+        "40",
+        "2",
+        "5"
+      ],
+      "termina": []
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "id": "aguadores",
+  "_es": "Vecinos con cubo (van a la bomba cada tanto) y paseantes. desde: nº de puerta o x.",
+  "aguadores": [
+    {
+      "desde": "40",
+      "fuente": "broad",
+      "dias": [
+        1
+      ],
+      "ropa": {
+        "abrigo": [
+          0.42,
+          0.33,
+          0.3
+        ],
+        "pantalon": [
+          0.3,
+          0.26,
+          0.24
+        ],
+        "chal": true,
+        "chistera": false,
+        "estatura": 0.95
+      }
+    },
+    {
+      "desde": "12",
+      "fuente": "broad",
+      "dias": [
+        1
+      ],
+      "ropa": {
+        "abrigo": [
+          0.3,
+          0.34,
+          0.4
+        ],
+        "pantalon": [
+          0.26,
+          0.26,
+          0.28
+        ],
+        "gorra": true,
+        "chistera": false
+      }
+    },
+    {
+      "desde": -36,
+      "fuente": "broad",
+      "dias": [
+        1,
+        2
+      ],
+      "ropa": {
+        "abrigo": [
+          0.48,
+          0.42,
+          0.3
+        ],
+        "pantalon": [
+          0.3,
+          0.28,
+          0.24
+        ],
+        "chal": true,
+        "chistera": false,
+        "estatura": 0.9
+      }
+    },
+    {
+      "desde": 16,
+      "fuente": "broad",
+      "dias": [
+        1,
+        2,
+        3
+      ],
+      "ropa": {
+        "abrigo": [
+          0.24,
+          0.28,
+          0.24
+        ],
+        "pantalon": [
+          0.22,
+          0.22,
+          0.22
+        ],
+        "gorra": true,
+        "chistera": false
+      }
+    },
+    {
+      "desde": 22,
+      "fuente": "broad",
+      "dias": [
+        2,
+        3
+      ],
+      "ropa": {
+        "abrigo": [
+          0.36,
+          0.24,
+          0.22
+        ],
+        "pantalon": [
+          0.24,
+          0.22,
+          0.22
+        ],
+        "chal": true,
+        "chistera": false,
+        "estatura": 0.92
+      }
+    },
+    {
+      "desde": 31,
+      "fuente": "peter",
+      "dias": [
+        1,
+        2,
+        3
+      ],
+      "ropa": {
+        "abrigo": [
+          0.28,
+          0.3,
+          0.36
+        ],
+        "pantalon": [
+          0.24,
+          0.24,
+          0.26
+        ],
+        "gorra": true,
+        "chistera": false
+      }
+    }
+  ],
+  "paseantes": [
+    {
+      "abrigo": [
+        0.3,
+        0.26,
+        0.22
+      ],
+      "pantalon": [
+        0.24,
+        0.22,
+        0.2
+      ],
+      "gorra": true,
+      "chistera": false
+    },
+    {
+      "abrigo": [
+        0.42,
+        0.3,
+        0.3
+      ],
+      "pantalon": [
+        0.26,
+        0.24,
+        0.22
+      ],
+      "chal": true,
+      "chistera": false,
+      "estatura": 0.93
+    },
+    {
+      "abrigo": [
+        0.2,
+        0.22,
+        0.26
+      ],
+      "pantalon": [
+        0.2,
+        0.2,
+        0.22
+      ],
+      "chistera": true,
+      "estatura": 1.03
+    }
+  ]
+}

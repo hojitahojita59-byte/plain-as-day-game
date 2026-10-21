@@ -1,0 +1,467 @@
+{
+  "id": "ch1_cuaderno",
+  "descripcion": "EL CUADERNO DEL ACTO I. Las palabras que se oyen por la calle y las fichas de cada casa, con huecos. Es el corazon del pivote del 8 de octubre de 2026 (soho-1854-pivote.md): el jugador ya no recibe un apunte hecho, recoge palabras y completa el las frases. Una ficha se sella cuando todos sus huecos estan bien; solo lo sellado se puede clavar en el plano o ensenarle a Snow.",
+  "_tipos": "Un hueco solo admite palabras de su tipo; cada tipo lleva distractores.",
+  "_formas": "Forma de la palabra en el diálogo, para resaltarla. Por defecto, el texto.",
+  "_nombres": "Nombres de escenografía; lo histórico tiene fuente en evidence.json.",
+  "_dias": "Mié 30 ago a dom 3 sep 1854. Los vecinos dicen el día; el registro, la fecha.",
+  "tipos": {
+    "persona": {
+      "nombre": "People",
+      "color": "#7a2e22"
+    },
+    "dia": {
+      "nombre": "Days",
+      "color": "#284f7a"
+    },
+    "numero": {
+      "nombre": "Numbers",
+      "color": "#3f6128"
+    },
+    "lugar": {
+      "nombre": "Places",
+      "color": "#6b4a1e"
+    },
+    "fuente": {
+      "nombre": "Water",
+      "color": "#1d6470"
+    }
+  },
+  "palabras": {
+    "george_carr": {
+      "texto": "George Carr",
+      "tipo": "persona"
+    },
+    "thomas_carr": {
+      "texto": "Thomas Carr",
+      "tipo": "persona",
+      "formas": [
+        "Thomas"
+      ]
+    },
+    "albert_keys": {
+      "texto": "Albert Keys",
+      "tipo": "persona"
+    },
+    "elizabeth_dunn": {
+      "texto": "Elizabeth Dunn",
+      "tipo": "persona",
+      "formas": [
+        "Elizabeth"
+      ]
+    },
+    "frances_lewis": {
+      "texto": "Frances Lewis",
+      "tipo": "persona",
+      "formas": [
+        "Frances"
+      ]
+    },
+    "mary_ann_dover": {
+      "texto": "Mary Ann Dover",
+      "tipo": "persona",
+      "formas": [
+        "Mary Ann"
+      ]
+    },
+    "edward_dover": {
+      "texto": "Edward Dover",
+      "tipo": "persona",
+      "formas": [
+        "Edward"
+      ]
+    },
+    "thomas_dover": {
+      "texto": "Thomas Dover",
+      "tipo": "persona",
+      "formas": [
+        "Thomas"
+      ]
+    },
+    "hannah_peel": {
+      "texto": "Hannah Peel",
+      "tipo": "persona"
+    },
+    "eliza_hart": {
+      "texto": "Eliza Hart",
+      "tipo": "persona"
+    },
+    "john_marsh": {
+      "texto": "John Marsh",
+      "tipo": "persona"
+    },
+    "miercoles": {
+      "texto": "Wednesday",
+      "tipo": "dia"
+    },
+    "jueves": {
+      "texto": "Thursday",
+      "tipo": "dia"
+    },
+    "viernes": {
+      "texto": "Friday",
+      "tipo": "dia"
+    },
+    "sabado": {
+      "texto": "Saturday",
+      "tipo": "dia"
+    },
+    "domingo": {
+      "texto": "Sunday",
+      "tipo": "dia"
+    },
+    "cinco": {
+      "texto": "5",
+      "tipo": "numero",
+      "formas": [
+        "5",
+        "five",
+        "Five"
+      ]
+    },
+    "nueve": {
+      "texto": "9",
+      "tipo": "numero",
+      "formas": [
+        "9",
+        "nine"
+      ]
+    },
+    "once": {
+      "texto": "11",
+      "tipo": "numero",
+      "formas": [
+        "11",
+        "Eleven",
+        "eleven"
+      ]
+    },
+    "dieciseis": {
+      "texto": "16",
+      "tipo": "numero",
+      "formas": [
+        "16",
+        "sixteen"
+      ]
+    },
+    "diecisiete": {
+      "texto": "17",
+      "tipo": "numero",
+      "formas": [
+        "17",
+        "seventeen"
+      ]
+    },
+    "setenta": {
+      "texto": "70",
+      "tipo": "numero",
+      "formas": [
+        "70",
+        "Seventy",
+        "seventy"
+      ]
+    },
+    "ochenta_y_uno": {
+      "texto": "81",
+      "tipo": "numero",
+      "formas": [
+        "81",
+        "eighty-one"
+      ]
+    },
+    "quinientos": {
+      "texto": "535",
+      "tipo": "numero"
+    },
+    "ninguno": {
+      "texto": "none",
+      "tipo": "numero",
+      "formas": [
+        "None",
+        "none",
+        "No one",
+        "no one"
+      ]
+    },
+    "hampstead": {
+      "texto": "Hampstead",
+      "tipo": "lugar"
+    },
+    "islington": {
+      "texto": "Islington",
+      "tipo": "lugar"
+    },
+    "agua_broad": {
+      "texto": "the Broad Street pump",
+      "tipo": "fuente",
+      "formas": [
+        "Broad Street pump"
+      ]
+    },
+    "agua_marshall": {
+      "texto": "the Marshall Street pump",
+      "tipo": "fuente",
+      "formas": [
+        "Marshall Street pump"
+      ]
+    },
+    "agua_peter": {
+      "texto": "the Peter Street pump",
+      "tipo": "fuente",
+      "formas": [
+        "Peter Street pump"
+      ]
+    },
+    "pozo_cerveceria": {
+      "texto": "the brewery well",
+      "tipo": "fuente",
+      "formas": [
+        "brewery well"
+      ]
+    },
+    "pozo_asilo": {
+      "texto": "the workhouse well",
+      "tipo": "fuente",
+      "formas": [
+        "workhouse well"
+      ]
+    }
+  },
+  "fichas": [
+    {
+      "id": "f_38",
+      "titulo": "38 Broad Street",
+      "tipo": "muerte",
+      "frase": "At 38, {a} died on {b}. His brother {c} had died on {d}, two days before.",
+      "huecos": {
+        "a": "george_carr",
+        "b": "viernes",
+        "c": "thomas_carr",
+        "d": "miercoles"
+      },
+      "registros": [
+        {
+          "id": "reg_george_carr",
+          "nombre": "George Carr",
+          "calle": "38 Broad Street",
+          "dia": "1 September"
+        },
+        {
+          "id": "reg_thomas_carr",
+          "nombre": "Thomas Carr",
+          "calle": "38 Broad Street",
+          "dia": "30 August"
+        }
+      ]
+    },
+    {
+      "id": "f_39",
+      "titulo": "39 Broad Street",
+      "tipo": "muerte",
+      "frase": "The tailor's apprentice, {a}, was {b} years old. He died before dawn on {c}. He fetched the shop's water from {d}.",
+      "huecos": {
+        "a": "albert_keys",
+        "b": "diecisiete",
+        "c": "viernes",
+        "d": "agua_broad"
+      },
+      "registros": [
+        {
+          "id": "reg_albert_keys",
+          "nombre": "Albert Keys, seventeen",
+          "calle": "39 Broad Street",
+          "dia": "1 September"
+        }
+      ],
+      "estela": {
+        "hueco": "d",
+        "clase": "muerte"
+      }
+    },
+    {
+      "id": "f_40",
+      "titulo": "40 Broad Street",
+      "tipo": "muerte",
+      "frase": "{a} was {b} months old. She died on {c}.",
+      "huecos": {
+        "a": "frances_lewis",
+        "b": "cinco",
+        "c": "sabado"
+      },
+      "registros": [
+        {
+          "id": "reg_frances_lewis",
+          "nombre": "Frances Lewis, five months",
+          "calle": "40 Broad Street",
+          "dia": "2 September"
+        }
+      ]
+    },
+    {
+      "id": "f_12c",
+      "titulo": "12 Cambridge Street",
+      "tipo": "muerte",
+      "frase": "{a} and her husband {b} died on {c}. Their son {d}, aged {e}, died the next day. They drank from {f}.",
+      "huecos": {
+        "a": "mary_ann_dover",
+        "b": "edward_dover",
+        "c": "miercoles",
+        "d": "thomas_dover",
+        "e": "nueve",
+        "f": "agua_broad"
+      },
+      "registros": [
+        {
+          "id": "reg_mary_ann_dover",
+          "nombre": "Mary Ann Dover",
+          "calle": "12 Cambridge Street",
+          "dia": "30 August"
+        },
+        {
+          "id": "reg_edward_dover",
+          "nombre": "Edward Dover",
+          "calle": "12 Cambridge Street",
+          "dia": "30 August"
+        },
+        {
+          "id": "reg_thomas_dover",
+          "nombre": "Thomas Dover, nine",
+          "calle": "12 Cambridge Street",
+          "dia": "31 August"
+        }
+      ],
+      "estela": {
+        "hueco": "f",
+        "clase": "muerte"
+      }
+    },
+    {
+      "id": "f_2n",
+      "titulo": "2 New Street",
+      "tipo": "muerte",
+      "frase": "Upstairs, {a}, aged {b}, died on {c}. The maid, {d}, aged {e}, died on {f}. The maid fetched their water from {g}, though {h} is nearer.",
+      "huecos": {
+        "a": "hannah_peel",
+        "b": "ochenta_y_uno",
+        "c": "jueves",
+        "d": "eliza_hart",
+        "e": "dieciseis",
+        "f": "sabado",
+        "g": "agua_broad",
+        "h": "agua_marshall"
+      },
+      "registros": [
+        {
+          "id": "reg_hannah_peel",
+          "nombre": "Hannah Peel, eighty-one",
+          "calle": "2 New Street",
+          "dia": "31 August"
+        },
+        {
+          "id": "reg_eliza_hart",
+          "nombre": "Eliza Hart, sixteen",
+          "calle": "2 New Street",
+          "dia": "2 September"
+        }
+      ],
+      "estela": {
+        "hueco": "g",
+        "clase": "muerte"
+      }
+    },
+    {
+      "id": "f_5p",
+      "titulo": "5 Peter Street",
+      "tipo": "muerte",
+      "frase": "{a} died here on {b}. His widow says no one else on this part of Peter Street has been ill. At work he drank from {c}.",
+      "huecos": {
+        "a": "john_marsh",
+        "b": "domingo",
+        "c": "agua_broad"
+      },
+      "registros": [
+        {
+          "id": "reg_john_marsh",
+          "nombre": "John Marsh",
+          "calle": "5 Peter Street",
+          "dia": "3 September"
+        }
+      ],
+      "estela": {
+        "hueco": "c",
+        "clase": "muerte"
+      }
+    },
+    {
+      "id": "f_cerveceria",
+      "titulo": "The brewery",
+      "tipo": "rareza",
+      "frase": "{a} men work at the brewery on Broad Street, in the same air as the street. {b} of them have died. They drink beer, and water from {c}.",
+      "huecos": {
+        "a": "setenta",
+        "b": "ninguno",
+        "c": "pozo_cerveceria"
+      },
+      "prueba": "cerveceria_sin_muertes",
+      "estela": {
+        "hueco": "c",
+        "clase": "sanos",
+        "desde": "16 Cambridge Street"
+      }
+    },
+    {
+      "id": "f_asilo",
+      "titulo": "The workhouse",
+      "tipo": "rareza",
+      "frase": "{a} people live in the workhouse on Poland Street, a street away from the pump. {b} of them have died of cholera. They drink from {c}.",
+      "huecos": {
+        "a": "quinientos",
+        "b": "cinco",
+        "c": "pozo_asilo"
+      },
+      "prueba": "asilo_sin_muertes",
+      "estela": {
+        "hueco": "c",
+        "clase": "sanos",
+        "desde": "7 Peter Street"
+      }
+    },
+    {
+      "id": "f_casera",
+      "titulo": "9 Peter Street",
+      "tipo": "rareza",
+      "frase": "{a} people live at 9 Peter Street, counting the lodgers. {b} of them have died. They fetch their water from {c}.",
+      "huecos": {
+        "a": "once",
+        "b": "ninguno",
+        "c": "agua_peter"
+      },
+      "estela": {
+        "hueco": "c",
+        "clase": "sanos",
+        "desde": "9 Peter Street"
+      }
+    },
+    {
+      "id": "f_hampstead",
+      "titulo": "The aunt in Hampstead",
+      "tipo": "rareza",
+      "frase": "Her aunt had not set foot in Soho for months. She died in {a} on {b}. Her water came from {c}. Her cousin drank it too, and died in {d}.",
+      "huecos": {
+        "a": "hampstead",
+        "b": "sabado",
+        "c": "agua_broad",
+        "d": "islington"
+      },
+      "prueba": "hampstead_viuda",
+      "estela": {
+        "hueco": "c",
+        "clase": "muerte",
+        "desde": [
+          -20,
+          -230
+        ]
+      }
+    }
+  ]
+}

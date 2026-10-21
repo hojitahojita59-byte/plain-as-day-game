@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: el carretero. Editar aqui, no en la calle.
+
+[node name="FiguraCarretero" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.50, 0.41, 0.23, 1)
+color_pantalon = Color(0.31, 0.27, 0.20, 1)
+color_sombrero = Color(0.34, 0.28, 0.16, 1)
+color_cuello = Color(0.55, 0.50, 0.40, 1)
+lleva_chistera = false
+lleva_gorra = true
+lleva_alzacuellos = false
+estatura = 1.12
+inclinacion = 0.10
+brazo_izquierdo = -0.90
+brazo_derecho = 0.35

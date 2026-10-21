@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3]
+
+; Ventana encendida: panel emisivo, sin luz.
+
+[sub_resource type="StandardMaterial3D" id="Mat_cristal"]
+albedo_color = Color(0.5, 0.33, 0.14, 1)
+emission_enabled = true
+emission = Color(1, 0.7, 0.33, 1)
+emission_energy_multiplier = 1.1
+roughness = 1.0
+
+[sub_resource type="BoxMesh" id="Mesh_cristal"]
+size = Vector3(1.42, 1.72, 0.04)
+
+[node name="VentanaEncendida" type="Node3D"]
+
+[node name="Cristal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.02)
+mesh = SubResource("Mesh_cristal")
+material_override = SubResource("Mat_cristal")
+

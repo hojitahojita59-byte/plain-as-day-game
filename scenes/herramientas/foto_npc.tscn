@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/herramientas/foto_npc.gd" id="1_foto"]
+
+; Sin nada dentro a propósito: el guion se lo monta todo. Así la escena no se
+; puede quedar desincronizada de la calle sin que nadie se entere.
+
+[node name="FotoNPC" type="Node"]
+script = ExtResource("1_foto")

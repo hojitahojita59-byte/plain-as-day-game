@@ -1,0 +1,414 @@
+[
+  {
+    "id": "broad_street_racimo",
+    "hecho": "Casi todas las muertes ocurrieron a poca distancia de la bomba de Broad Street. Solo diez muertes en casas claramente más cercanas a otra bomba.",
+    "cita_textual": "On proceeding to the spot, I found that nearly all the deaths had taken place within a short distance of the pump. There were only ten deaths in houses situated decidedly nearer to another street-pump.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 38-40.",
+    "capitulo": 1,
+    "escena": "ch1_s4_mapa",
+    "sostiene": [
+      "tesis_agua"
+    ],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "Citado literalmente en la reseña de Parkes (1855), p. 457. NO refuta el miasma por sí solo: un racimo también dibuja el olor. Ese es el punto de la escena 5."
+  },
+  {
+    "id": "broad_street_61_bebedores",
+    "hecho": "De las muertes en la zona de la bomba, en 61 casos se confirmó que el fallecido bebía agua de la bomba; en 6 no se pudo averiguar; en 6 se confirmó que no la bebía.",
+    "cita_textual": "There were sixty-one instances in which I was informed that the deceased persons used to drink the pump-water from Broad-street... in six cases I was informed that the deceased persons did not drink the pump-water before their illness.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 38-40.",
+    "capitulo": 1,
+    "escena": "ch1_s3_puerta_a_puerta",
+    "sostiene": [
+      "tesis_agua"
+    ],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "Los 6 que NO bebían son honestos y deben aparecer en el juego. Enseña que una prueba fuerte no es una prueba perfecta."
+  },
+  {
+    "id": "hampstead_viuda",
+    "hecho": "La viuda de un fabricante de fulminantes, de 59 años, murió de cólera en West End (Hampstead) el 2 de septiembre de 1854. Llevaba meses sin pisar Broad Street. Un carro le traía a diario una botella grande de agua de esa bomba porque prefería su sabor. Bebió el jueves 31 de agosto y el viernes; enfermó esa noche.",
+    "cita_textual": "A cart went from Broad-street to West-end every day, and it was the custom to take out a large bottle of the water from the pump in Broad-street, as she preferred it.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 44-45.",
+    "capitulo": 2,
+    "escena": "ch2_s3_hampstead",
+    "sostiene": [
+      "tesis_agua",
+      "refuta_miasma"
+    ],
+    "refuta_a": [
+      "guardian_comerciante",
+      "guardian_medico"
+    ],
+    "verificado": "si",
+    "nota": "LA prueba del juego. El aire de Soho no llegó a Hampstead; el agua sí. Parkes la llama 'certainly unanswerable'. El propio escéptico admite que no tiene respuesta."
+  },
+  {
+    "id": "hampstead_sobrina",
+    "hecho": "Una sobrina que estaba de visita también bebió del agua, regresó a su casa en una zona alta y sana de Islington, enfermó de cólera y murió. No había cólera ni en West End ni en el barrio de la sobrina.",
+    "cita_textual": "A niece, who was on a visit to this lady, also drank of the water; she returned to her residence, in a high and healthy part of Islington, was attacked with cholera, and died also.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 44-45.",
+    "capitulo": 2,
+    "escena": "ch2_s3_hampstead",
+    "sostiene": [
+      "tesis_agua",
+      "refuta_miasma"
+    ],
+    "refuta_a": [
+      "guardian_comerciante"
+    ],
+    "verificado": "si",
+    "nota": "Segunda mitad de la prueba. 'High and healthy part' mata el argumento de la elevación, que era la objeción sanitarista estándar."
+  },
+  {
+    "id": "hampstead_criada_no_enfermo",
+    "hecho": "Una criada también bebió de esa agua en Hampstead y no enfermó, o no de gravedad.",
+    "cita_textual": "Besides these two persons, only one servant partook of the water at Hampstead West-end, and she did not suffer, or, at least, not severely.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 44-45.",
+    "capitulo": 2,
+    "escena": "ch2_s3_hampstead",
+    "sostiene": [],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "Prueba incómoda, y por eso hay que incluirla. Beber agua contaminada no garantiza enfermar. Enseña causa probabilística frente a causa mecánica."
+  },
+  {
+    "id": "microscopio_sin_organismo",
+    "hecho": "El agua de la bomba contenía partículas blancas floculentas visibles a simple vista. El doctor Hassall las examinó al microscopio e informó de que no tenían estructura organizada y que probablemente procedían de la descomposición de otra materia.",
+    "cita_textual": "Dr. Hassall, who was good enough to examine some of this water with the microscope, informed me that these particles had no organized structure, and that he thought they probably resulted from decomposition of other matter.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 51-54.",
+    "capitulo": 2,
+    "escena": "ch2_s4_microscopio",
+    "sostiene": [],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "CLAVE PEDAGÓGICA. El microscopio de 1854 no vio nada. La escena de la frustración deliberada que pide la biblia es históricamente exacta y está documentada."
+  },
+  {
+    "id": "pozo_sin_grietas",
+    "hecho": "Al abrir el pozo, el señor Farrell, superintendente de obras, informó de que no había agujero ni grieta en el ladrillo por donde pudiera entrar impureza. El pozo tenía entre 28 y 30 pies de profundidad; la alcantarilla pasa a pocas yardas, a 22 pies bajo la superficie.",
+    "cita_textual": "I was informed by Mr. Farrell, the superintendent of the works, that there was no hole or crevice in the brickwork of the well... consequently in this respect the contamination of the water is not made out.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 51-54.",
+    "capitulo": 2,
+    "escena": "ch2_s6_sotano_40",
+    "sostiene": [],
+    "refuta_a": [],
+    "contradice": [
+      "tesis_agua"
+    ],
+    "verificado": "si",
+    "nota": "EL AGUJERO DEL ARGUMENTO EN 1855. Snow nunca pudo demostrar la contaminación física del pozo. Es exactamente el hueco que rellena el descubrimiento de Whitehead en el número 40. Justifica dramáticamente la escena 6 con documentación real."
+  },
+  {
+    "id": "declive_antes_de_la_palanca",
+    "hecho": "Los ataques ya caían antes de retirar la palanca: 143 el 1 de septiembre, 116 el 2, 54 el 3. El día 8, cuando se quitó la palanca, hubo 12; el 9, once; el 10, cinco. Snow admite que no puede decidirse si el pozo seguía activo.",
+    "cita_textual": "The attacks had so far diminished before the use of the water was stopped, that it is impossible to decide whether the well still contained the cholera poison in an active state.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 51-54.",
+    "capitulo": 3,
+    "escena": "ch3_juicio",
+    "sostiene": [
+      "honestidad_de_snow"
+    ],
+    "refuta_a": [],
+    "contradice": [
+      "quitar_la_palanca_paro_la_epidemia"
+    ],
+    "verificado": "si",
+    "nota": "Objeción sin refutación limpia, y Snow la escribe él mismo. Es el mejor material del juego: la ciencia honesta publica lo que le estorba."
+  },
+  {
+    "id": "agua_aparentemente_pura",
+    "hecho": "El agua de la bomba pasaba por perfectamente pura ante casi todo el mundo y contenía menos impureza que la de otras bombas de la parroquia que no propagaron el cólera. Snow concluye que la cantidad de materia mórbida capaz de producir cólera es inconcebiblemente pequeña.",
+    "cita_textual": "We must conclude from this outbreak that the quantity of morbid matter which is sufficient to produce cholera is inconceivably small.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 51-54.",
+    "capitulo": 3,
+    "sostiene": [
+      "tesis_agua"
+    ],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "Es cierta Y es su punto débil. Parkes replica: 'If we accept this opinion, we can never exclude the agency of water in any case.' Eso es una objeción de falsabilidad un siglo antes de Popper. Material de oro para el Capítulo III."
+  },
+  {
+    "id": "gran_experimento_muertes",
+    "hecho": "En cuatro semanas hubo 334 muertes por cólera en los distritos servidos por las dos compañías. En 286 casos la casa recibía agua de la Southwark and Vauxhall; en solo 14, de la Lambeth. 22 sacaban el agua con cubo directamente del Támesis.",
+    "cita_textual": "Of these it was ascertained, that in two hundred and eighty-six cases the house where the fatal attack of cholera took place was supplied with water by the Southwark and Vauxhall Company, and in only fourteen cases was the house supplied with the Lambeth Company's water.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, pp. 79-80.",
+    "capitulo": 2,
+    "escena": "ch2_s5_gran_experimento",
+    "sostiene": [
+      "tesis_agua"
+    ],
+    "refuta_a": [
+      "guardian_numeros"
+    ],
+    "verificado": "si",
+    "nota": "El numerador. Por sí solo NO basta: ver gran_experimento_casas."
+  },
+  {
+    "id": "gran_experimento_casas",
+    "hecho": "Según el retorno parlamentario, la Southwark and Vauxhall servía a 40.046 casas y la Lambeth a 26.107. Es decir, unas tres a dos.",
+    "cita_textual": "The total number of houses supplied by the Southwark and Vauxhall Company is 40,046, and by the Lambeth Company 26,107, or as three to two, nearly.",
+    "fuente_tipo": "retorno_parlamentario",
+    "cita_mla": "Parkes, Edmund A. Review of On the Mode of Communication of Cholera, by John Snow. British and Foreign Medical Review, Apr. 1855, p. 462.",
+    "capitulo": 2,
+    "escena": "ch2_s5_gran_experimento",
+    "sostiene": [
+      "tesis_agua"
+    ],
+    "refuta_a": [
+      "guardian_numeros"
+    ],
+    "verificado": "si",
+    "nota": "EL DENOMINADOR, y lo aporta el escéptico. 286/40046 = 71,4 por 10.000 casas frente a 14/26107 = 5,4 por 10.000. Razón 13,3 a 1. Comprueba la cifra de '14 veces' de la biblia antes de usarla: sale de este cálculo o de una ventana de semanas distinta."
+  },
+  {
+    "id": "objecion_denominador",
+    "hecho": "Parkes objeta que Snow no dice cuántas casas servía cada compañía dentro del distrito mezclado, y que las pocas muertes de la Lambeth podrían ser simplemente proporcionales a sus pocas casas.",
+    "cita_textual": "He has not told us how many houses in the district referred to were supplied respectively by the Battersea and Ditton waters. It may be that the Ditton water was furnished to so few houses, that the small number of deaths from cholera were merely proportionate to the smaller number of houses.",
+    "fuente_tipo": "resena_academica",
+    "cita_mla": "Parkes, Edmund A. Review of On the Mode of Communication of Cholera, by John Snow. British and Foreign Medical Review, Apr. 1855, p. 462.",
+    "capitulo": 3,
+    "escena": "ch3_juicio",
+    "sostiene": [],
+    "refuta_a": [],
+    "es_objecion_de": "guardian_numeros",
+    "calidad_objecion": "correcta",
+    "verificado": "si",
+    "nota": "Objeción metodológicamente CORRECTA. Es la lección de tasas del juego, dicha por el adversario. Se responde aportando el dato, no rebatiéndola."
+  },
+  {
+    "id": "objecion_circulo_atmosferico",
+    "hecho": "Parkes objeta que un racimo de casos que se difumina en círculo alrededor de un punto parece más el efecto de una causa atmosférica que de un agua, y que hay tantas bombas en el distrito que cualquier brote habría tenido una cerca.",
+    "cita_textual": "This certainly looks more like the effect of an atmospheric cause than any other... There are, indeed, so many pumps in this district, that wherever the outbreak had taken place, it would most probably have had one pump or other in its vicinity.",
+    "fuente_tipo": "resena_academica",
+    "cita_mla": "Parkes, Edmund A. Review of On the Mode of Communication of Cholera, by John Snow. British and Foreign Medical Review, Apr. 1855, p. 458.",
+    "capitulo": 3,
+    "escena": "ch3_juicio",
+    "sostiene": [],
+    "refuta_a": [],
+    "es_objecion_de": "guardian_comerciante",
+    "calidad_objecion": "refutable",
+    "refutada_por": [
+      "hampstead_viuda",
+      "hampstead_sobrina",
+      "cerveceria_sin_muertes"
+    ],
+    "verificado": "si",
+    "nota": "Es literalmente la objeción que el propio Whitehead le hace a Snow en el Capítulo I escena 5. Un contemporáneo real la formuló. Úsala palabra por palabra."
+  },
+  {
+    "id": "parkes_horsleydown_normaliza",
+    "hecho": "Parkes visitó los dos patios de Horsleydown y contó: Surrey-buildings tiene 15 casas de cuatro habitaciones (60 habitaciones); Truscott's-court, 10 casas de dos (20 habitaciones). A dos personas por habitación serían 120 personas frente a 40, de modo que una mortalidad tres a uno sería lo esperable sin ninguna otra causa.",
+    "cita_textual": "There are, therefore, sixty rooms in the first-named court to twenty in the second; and if we suppose the density of population to be two to each room, there would be 120 persons in Surrey-buildings to 40 in Truscott's-court.",
+    "fuente_tipo": "resena_academica",
+    "cita_mla": "Parkes, Edmund A. Review of On the Mode of Communication of Cholera, by John Snow. British and Foreign Medical Review, Apr. 1855, p. 451.",
+    "capitulo": 2,
+    "escena": "ch2_s5_gran_experimento",
+    "sostiene": [],
+    "refuta_a": [],
+    "calidad_objecion": "correcta",
+    "verificado": "si",
+    "nota": "Ejemplo resuelto de normalización hecho por el escéptico, con números pequeños y manejables. Es el tutorial perfecto ANTES del Gran Experimento."
+  },
+  {
+    "id": "parkes_reconoce_a_snow",
+    "hecho": "Pese a rechazar la tesis, Parkes concluye que ningún hombre podría haber llevado la investigación con mayor diligencia, y que Snow es un observador honesto y concienzudo, aunque sesgado por su credo.",
+    "cita_textual": "Although we think that he is biased by his creed, and obstinately looks only in one direction, we close his book with the conviction that he is an honest and conscientious observer.",
+    "fuente_tipo": "resena_academica",
+    "cita_mla": "Parkes, Edmund A. Review of On the Mode of Communication of Cholera, by John Snow. British and Foreign Medical Review, Apr. 1855, p. 463.",
+    "capitulo": 3,
+    "escena": "ch3_epilogo",
+    "sostiene": [],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "Para el epílogo. El que no te cree puede respetarte y ser honesto. Es la frase que impide que el juego sea un panfleto."
+  },
+  {
+    "id": "cerveceria_sin_muertes",
+    "hecho": "En la cervecería de Broad Street, junto a la bomba, trabajaban más de setenta hombres y ninguno enfermó de gravedad: solo dos se indispusieron, y no seriamente. El propietario, el señor Huggins, cree que no beben agua en absoluto, porque tienen una ración de cerveza de malta, y está seguro de que nunca sacaron agua de la bomba de la calle. La cervecería tiene además un pozo profundo propio.",
+    "cita_textual": "He informed me that there were above seventy workmen employed in the brewery, and that none of them had suffered from cholera,—at least in a severe form,—only two having been indisposed, and that not seriously... There is a deep well in the brewery, in addition to the New River water.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, p. 42.",
+    "capitulo": 2,
+    "escena": "ch2_s1_cerveceria",
+    "sostiene": [
+      "tesis_agua",
+      "refuta_miasma"
+    ],
+    "refuta_a": [
+      "guardian_comerciante"
+    ],
+    "verificado": "si",
+    "nota": "Ojo al matiz para el diálogo: NO es 'ni un solo muerto' sino 'ninguno de gravedad, dos indispuestos'. Y el propietario se llama Huggins. La biblia dice 'cervecería del León'; en la fuente Snow solo dice 'a Brewery in Broad Street'. Si quieres el nombre, hay que buscarlo en otra fuente o inventarlo declaradamente."
+  },
+  {
+    "id": "asilo_sin_muertes",
+    "hecho": "El asilo de pobres de Poland Street está rodeado en más de tres cuartas partes por casas donde hubo muertes, y de sus quinientos treinta y cinco internos solo murieron cinco de cólera; las demás muertes fueron de personas ingresadas ya enfermas. Tiene pozo propio además del suministro de la Grand Junction, y los internos nunca mandaron a buscar agua a Broad Street. Si la mortalidad hubiera sido igual que en las calles de alrededor, habrían muerto más de cien.",
+    "cita_textual": "Out of five hundred and thirty-five inmates only five died of cholera... If the mortality in the workhouse had been equal to that in the streets immediately surrounding it on three sides, upwards of one hundred persons would have died.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, p. 42.",
+    "capitulo": 2,
+    "escena": "ch2_s2_asilo",
+    "sostiene": [
+      "tesis_agua",
+      "refuta_miasma",
+      "refuta_moralismo"
+    ],
+    "refuta_a": [
+      "guardian_moralista"
+    ],
+    "verificado": "si",
+    "nota": "5 de 535 frente a los 100 esperados. Snow hace aquí la normalización ÉL SOLO y en voz alta: es el mejor ejemplo del juego para enseñar 'lo esperado frente a lo observado', y con números que caben en la cabeza."
+  },
+  {
+    "id": "fabrica_eley_37_broad",
+    "hecho": "En la fábrica de fulminantes del número 37 de Broad Street trabajaban unas doscientas personas. Se mantenían dos tinas en el local siempre llenas con agua de la bomba de la calle, para quien quisiera beber. Dieciocho de esos trabajadores murieron de cólera en sus propias casas: dieciséis hombres y dos mujeres.",
+    "cita_textual": "At the percussion-cap manufactory, 37 Broad Street, where, I understand, about two hundred workpeople were employed, two tubs were kept on the premises always supplied with water from the pump in the street, for those to drink who wished; and eighteen of these workpeople died of cholera at their own homes.",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Snow, John. On the Mode of Communication of Cholera. 2nd ed., John Churchill, 1855, p. 43.",
+    "capitulo": 2,
+    "escena": "ch2_s1_cerveceria",
+    "sostiene": [
+      "tesis_agua",
+      "refuta_miasma"
+    ],
+    "refuta_a": [
+      "guardian_comerciante",
+      "guardian_moralista"
+    ],
+    "verificado": "si",
+    "nota": "PIEZA NUEVA Y MUY BUENA. Es el espejo de la cervecería: misma calle, mismo aire, pero aquí SÍ bebían de la bomba, y aquí SÍ murieron. Cervecería y fábrica juntas son un experimento natural en una sola manzana. Además murieron EN SUS CASAS, repartidos por el barrio: el aire de Broad Street no los siguió hasta allí. Y el dueño es el señor Eley, cuya madre es la viuda de Hampstead que hacía traer el agua en carro."
+  },
+  {
+    "id": "bebe_40_broad_caso_indice",
+    "hecho": "Estudiando los registros del Registrador por otro motivo, Whitehead encontró esta entrada: en el número 40 de Broad Street, el 2 de septiembre, murió una niña de cinco meses de agotamiento, tras un ataque de diarrea cuatro días antes. Fue al momento a la casa y la madre le dijo que la niña había enfermado el lunes 28 de agosto, setenta y ocho horas antes del gran brote.",
+    "cita_textual": "At 40, Broad Street, 2nd September, a daughter, aged five months, exhaustion, after an attack of Diarrhea four days previous to death.",
+    "fuente_tipo": "informe_parroquial",
+    "cita_mla": "Whitehead, Henry. Report of his special investigation of Broad Street. Report on the Cholera Outbreak in the Parish of St. James, Westminster, during the Autumn of 1854, 1855, pp. 159-60.",
+    "capitulo": 2,
+    "escena": "ch2_s6_sotano_40",
+    "sostiene": [
+      "tesis_agua",
+      "mecanismo_completo"
+    ],
+    "refuta_a": [
+      "guardian_medico"
+    ],
+    "verificado": "si",
+    "nota": "CUIDADO CON EL APELLIDO. En esta fuente la niña NO tiene nombre: es 'a daughter, aged five months'. Lo de 'bebé Lewis' viene de fuentes posteriores. Si el juego la llama Lewis, hay que citar de dónde sale, o dejarla sin apellido como en el original."
+  },
+  {
+    "id": "panales_en_la_fosa",
+    "hecho": "La madre contó que las deposiciones se recogían en pañales que, al quitarlos, se ponían inmediatamente a remojo en cubos, y que el agua de esos cubos se vertía en parte en el fregadero del patio trasero y en parte en una fosa séptica en el área delantera.",
+    "cita_textual": "She told me that the dejections were collected in napkins, which, on being removed, were immediately steeped in pails, the water from which was poured partly into a sink in the back-yard, and partly into a cesspool in the front area.",
+    "fuente_tipo": "informe_parroquial",
+    "cita_mla": "Whitehead, Henry. Report of his special investigation of Broad Street. Report on the Cholera Outbreak in the Parish of St. James, Westminster, during the Autumn of 1854, 1855, p. 159.",
+    "capitulo": 2,
+    "escena": "ch2_s6_sotano_40",
+    "sostiene": [
+      "tesis_agua",
+      "mecanismo_completo"
+    ],
+    "refuta_a": [
+      "guardian_medico"
+    ],
+    "verificado": "si",
+    "nota": "EL MECANISMO. Y fíjate en cómo lo consigue: no analizando nada, sino preguntándole a una madre qué hizo con unos pañales. Es la escena que justifica que el protagonista sea el cura y no el médico."
+  },
+  {
+    "id": "percolacion_probada",
+    "hecho": "Whitehead comunicó al Comité la peligrosa proximidad de la fosa al pozo. La investigación que ordenaron, hecha por el Secretario y el Agrimensor, estableció con claridad la filtración de líquido desde la fosa hasta el pozo. Whitehead bajó él mismo al pozo a ver los puntos donde se había retirado el revestimiento.",
+    "cita_textual": "It clearly established the general fact of percolation of fluid from the cesspool into the well... having been down the well and examined the places where the steining was removed for the purpose of inspection, I can at least say that I saw enough to convince me on this point.",
+    "fuente_tipo": "informe_parroquial",
+    "cita_mla": "Whitehead, Henry. Report of his special investigation of Broad Street. Report on the Cholera Outbreak in the Parish of St. James, Westminster, during the Autumn of 1854, 1855, p. 160.",
+    "capitulo": 2,
+    "escena": "ch2_s6_sotano_40",
+    "sostiene": [
+      "tesis_agua",
+      "mecanismo_completo"
+    ],
+    "refuta_a": [
+      "guardian_medico"
+    ],
+    "contradice": [],
+    "verificado": "si",
+    "nota": "ESTA ES LA PIEZA QUE CIERRA EL HUECO DE 'pozo_sin_grietas'. Snow no pudo probar la contaminación física en 1854; se probó en abril de 1855 gracias a esta pista. Cronología importante: ocurre DESPUÉS de la junta, no antes."
+  },
+  {
+    "id": "panfleto_whitehead_1854",
+    "hecho": "En octubre de 1854, un mes después del brote, Whitehead publicó su propio folleto sobre la epidemia. En él se niega expresamente a señalar una causa (dice que no es asunto suyo ni está en su mano aventurar siquiera una conjetura sobre la única causa determinante), apunta a que la atmósfera de todo el mundo favorece en ese momento la aparición de una plaga formidable, y culpa a la acumulación desigual de suciedad, el hacinamiento y las calles y casas mal ventiladas. No menciona en ningún momento la teoría del agua.",
+    "cita_textual": "Neither will he venture—as it is not his province, and is not in his power—to hazard even a guess at the one determining cause... the atmosphere, all over the world, is at this time favourable to the production of a most formidable plague.",
+    "fuente_tipo": "folleto",
+    "cita_mla": "Whitehead, Henry. The Cholera in Berwick Street. 2nd ed., Hope and Co., Oct. 1854, pp. 13-14.",
+    "capitulo": 1,
+    "escena": "ch1_s1_calle",
+    "sostiene": [],
+    "refuta_a": [],
+    "contradice": [
+      "tesis_agua"
+    ],
+    "verificado": "si",
+    "nota": "EL PUNTO DE PARTIDA DEL PROTAGONISTA, EN SUS PROPIAS PALABRAS. Matiz importante: Whitehead no era un fanático del miasma, era un hombre prudente que se negaba a nombrar una causa y se inclinaba por el aire y la suciedad. Usar esta cita en el Capítulo III, en boca de un guardián que se la lee al jugador, es la mejor escena posible del juego."
+  },
+  {
+    "id": "comite_investigacion_1855",
+    "hecho": "El 25 de noviembre de 1854 la parroquia nombró su propio Comité de Investigación del Cólera. Entre sus miembros estaban los guardianes de la iglesia Crane y Rice, el reverendo T. Beames, los doctores King, Lankester y Snow, el reverendo H. Whitehead, y el señor York como secretario. El comité encargó a York inspeccionar la fosa séptica y los desagües del número 40 de Broad Street, y abrir y examinar el propio pozo y la tierra intermedia.",
+    "cita_textual": "To inspect the cesspool and drains of the house, No. 40, in Broad Street... and to open and examine the well itself and the soil intervening between it and the drains and cesspool.",
+    "fuente_tipo": "informe_parroquial",
+    "cita_mla": "Cholera Inquiry Committee. Report on the Cholera Outbreak in the Parish of St. James, Westminster, during the Autumn of 1854. J. Churchill, July 1855.",
+    "capitulo": 4,
+    "escena": "ch4_abril_1855",
+    "sostiene": [
+      "mecanismo_completo"
+    ],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "LA FECHA QUE FALTABA para el salto temporal, y los nombres reales de los miembros. Snow y Whitehead acabaron en el MISMO comité: el epílogo tiene reparto real. El informe de York sobre el pozo es la prueba física del Capítulo IV; hay que descargar el informe completo para transcribirlo."
+  },
+  {
+    "id": "whitehead_no_lo_explica_todo",
+    "hecho": "Whitehead plantea él mismo las objeciones a su propio hallazgo: si la materia de la niña contaminó el pozo, ¿por qué los ataques cayeron en picado el domingo 3 de septiembre, cuando durante los días siguientes se vertió en el mismo sitio la materia de dos enfermos adultos? Y admite que no está en posición de responder.",
+    "cita_textual": "I have already said enough to shew that I am not in a position to answer these questions.",
+    "fuente_tipo": "informe_parroquial",
+    "cita_mla": "Whitehead, Henry. Report of his special investigation of Broad Street. Report on the Cholera Outbreak in the Parish of St. James, Westminster, during the Autumn of 1854, 1855, pp. 161-62.",
+    "capitulo": 3,
+    "escena": "ch3_epilogo",
+    "sostiene": [
+      "honestidad_de_snow"
+    ],
+    "refuta_a": [],
+    "verificado": "si",
+    "nota": "El propio protagonista publica lo que no encaja con su descubrimiento. Es el arco del personaje cerrado: empezó creyendo en el miasma y acaba siendo tan riguroso que ataca su propia prueba. Material para la última escena."
+  },
+  {
+    "id": "lewis_nina_del_40",
+    "hecho": "Una nina de pocos meses del numero 40 de Broad Street llevaba enferma desde el lunes 28 de agosto. Su madre lavaba sus panales toda la semana y vaciaba el agua en el sumidero de delante de la casa, a un paso del pozo de la bomba.",
+    "resumen": "A child at 40 Broad Street had been ill since Monday the 28th. Her mother washed her things all week and emptied the water into the gully in front of the house.",
+    "cita_textual": "",
+    "fuente_tipo": "informe_publicado",
+    "cita_mla": "Report on the Cholera Outbreak in the Parish of St James, Westminster, during the Autumn of 1854. Presented to the Vestry by the Cholera Inquiry Committee, July 1855. J. Churchill, 1855.",
+    "capitulo": 1,
+    "escena": "ch1_s1_calle",
+    "sostiene": [
+      "tesis_agua"
+    ],
+    "refuta_a": [],
+    "verificado": "por_verificar",
+    "nota": "ES PRUEBA PORQUE EL PROPIO WHITEHEAD LA RECOGIO, y su informe al comite es una fuente publicada: no es lo mismo que un vecino contandote algo en una puerta. La distincion del juego no es \"testimonio no vale\", es \"si puedes decir de donde sale, vale\".",
+    "_por_verificar": "Falta la cita literal del informe de 1855: copiarla y poner verificado.",
+    "_por_que_no_dice_caso_indice": "No dice 'caso índice': en el Acto I nadie lo sabe."
+  }
+]

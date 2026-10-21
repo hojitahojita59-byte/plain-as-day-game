@@ -1,0 +1,96 @@
+{
+  "id": "ch1_s3_cambridge_lavandera",
+  "descripcion": "CAMBRIDGE STREET, 12. La lavandera. Entrega TRES muertes de una sola casa, que es lo que hacia el colera en 1854 y lo que ninguna puerta habia ensenado todavia: no se llevaba a uno de aqui y otro de alla, vaciaba viviendas enteras.",
+  "_por_que_tres": "Tres muertes en una casa: el brote va por domicilios.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "laundress",
+      "retrato": "seca",
+      "texto": "You are the curate from St Luke's. Come in, but I have washing to finish.",
+      "opciones": [
+        {
+          "texto": "Has anyone in this house died?",
+          "va_a": "los_tres"
+        },
+        {
+          "texto": "I can come back another day.",
+          "va_a": "no_hace_falta"
+        }
+      ]
+    },
+    "no_hace_falta": {
+      "hablante": "laundress",
+      "retrato": "seca",
+      "texto": "No, ask now. I will have less time tomorrow, not more.",
+      "opciones": [
+        {
+          "texto": "Has anyone in this house died?",
+          "va_a": "los_tres"
+        }
+      ]
+    },
+    "los_tres": {
+      "hablante": "laundress",
+      "retrato": "cansada",
+      "texto": "My sister, Mary Ann Dover, died on Wednesday. Her husband Edward the same night. Their boy Thomas on Thursday morning.",
+      "palabras": [
+        "mary_ann_dover",
+        "edward_dover",
+        "miercoles",
+        "thomas_dover",
+        "jueves"
+      ],
+      "ficha": "f_12c",
+      "siguiente": "el_nino"
+    },
+    "el_nino": {
+      "hablante": "laundress",
+      "retrato": "cansada",
+      "texto": "Thomas was nine. Please give him his own line in the register.",
+      "palabras": [
+        "nueve"
+      ],
+      "opciones": [
+        {
+          "texto": "I will. Where did they get their water?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "I will.",
+          "va_a": "adios"
+        }
+      ]
+    },
+    "agua": {
+      "hablante": "laundress",
+      "retrato": "neutro",
+      "texto": "They drank from the Broad Street pump, like the rest of this street. I wash with it too.",
+      "palabras": [
+        "agua_broad"
+      ]
+    },
+    "adios": {
+      "hablante": "laundress",
+      "retrato": "neutro",
+      "texto": "Now let me finish my washing."
+    },
+    "otra_vez": {
+      "hablante": "laundress",
+      "retrato": "neutro",
+      "texto": "Back again? Ask quickly.",
+      "opciones": [
+        {
+          "texto": "Where did they get their water?",
+          "va_a": "agua"
+        },
+        {
+          "texto": "Nothing. I am sorry.",
+          "va_a": "adios"
+        }
+      ]
+    }
+  },
+  "_pivote": "Distractores: dos Thomas (Carr y Dover) y dos días seguidos."
+}

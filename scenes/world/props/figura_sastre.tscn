@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: el sastre. Editar aqui, no en la calle.
+
+[node name="FiguraSastre" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.18, 0.29, 0.24, 1)
+color_pantalon = Color(0.20, 0.22, 0.21, 1)
+color_sombrero = Color(0.10, 0.13, 0.12, 1)
+color_cuello = Color(0.94, 0.92, 0.86, 1)
+lleva_chistera = true
+lleva_gorra = false
+lleva_alzacuellos = false
+estatura = 1.04
+inclinacion = -0.04
+brazo_izquierdo = -0.15
+brazo_derecho = 0.20

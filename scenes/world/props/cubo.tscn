@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3]
+
+; Cubo del n. 40. Sin colision ni brillo a proposito: no se clica.
+
+[sub_resource type="StandardMaterial3D" id="Mat_madera"]
+albedo_color = Color(0.38, 0.29, 0.21, 1)
+roughness = 1.0
+
+[sub_resource type="CylinderMesh" id="Mesh_cubo"]
+top_radius = 0.135
+bottom_radius = 0.105
+height = 0.26
+radial_segments = 10
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Mesh_aro"]
+top_radius = 0.142
+bottom_radius = 0.142
+height = 0.025
+radial_segments = 10
+rings = 1
+
+[node name="Cubo" type="Node3D"]
+
+[node name="Cuerpo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13, 0)
+mesh = SubResource("Mesh_cubo")
+material_override = SubResource("Mat_madera")
+
+; Aro: arista para el contorno.
+[node name="Aro" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.245, 0)
+mesh = SubResource("Mesh_aro")
+material_override = SubResource("Mat_madera")

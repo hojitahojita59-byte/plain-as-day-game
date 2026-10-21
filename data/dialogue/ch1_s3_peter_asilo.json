@@ -1,0 +1,152 @@
+{
+  "id": "ch1_s3_peter_asilo",
+  "descripcion": "PETER STREET, 7. EL ASILO DE MARSHALL STREET, contado por su portero. La segunda ausencia del capitulo: quinientas y pico personas hacinadas a doscientos metros del racimo, y casi nadie enfermo.",
+  "_por_que_una_ausencia_y_no_una_muerte": "Anomalía: aquí NO pasa nada, así que no da asiento del registro.",
+  "_lo_que_el_portero_no_dice": "No menciona el pozo del asilo (Acto II).",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "abre",
+  "nodos": {
+    "abre": {
+      "hablante": "workhouse_porter",
+      "retrato": "cortes",
+      "texto": "I am off duty, Reverend, but I will not shut the door on a clergyman.",
+      "opciones": [
+        {
+          "texto": "How many people live there?",
+          "va_a": "dentro"
+        },
+        {
+          "texto": "How many have you lost?",
+          "va_a": "la_cifra"
+        }
+      ]
+    },
+    "dentro": {
+      "hablante": "workhouse_porter",
+      "retrato": "harto",
+      "texto": "There are 535 people in the workhouse. We are packed in tight.",
+      "palabras": [
+        "quinientos"
+      ],
+      "ficha": "f_asilo",
+      "marca": [
+        "vio_dentro_asilo"
+      ],
+      "opciones": [
+        {
+          "texto": "How many have you lost?",
+          "va_a": "la_cifra",
+          "requiere": [
+            "!heard_the_workhouse"
+          ]
+        },
+        {
+          "texto": "Where do they get their water?",
+          "va_a": "el_pozo"
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "fin",
+          "requiere": [
+            "heard_the_workhouse"
+          ]
+        }
+      ]
+    },
+    "la_cifra": {
+      "hablante": "workhouse_porter",
+      "retrato": "harto",
+      "texto": "Five died of cholera. The others who died there were brought in already ill.",
+      "palabras": [
+        "cinco"
+      ],
+      "ficha": "f_asilo",
+      "marca": [
+        "heard_the_workhouse"
+      ],
+      "opciones": [
+        {
+          "texto": "How many people live there?",
+          "va_a": "dentro",
+          "requiere": [
+            "!vio_dentro_asilo"
+          ]
+        },
+        {
+          "texto": "Where do they get their water?",
+          "va_a": "el_pozo"
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "fin",
+          "requiere": [
+            "vio_dentro_asilo"
+          ]
+        }
+      ]
+    },
+    "fin": {
+      "hablante": "whitehead",
+      "retrato": "pensativo",
+      "texto": "Thank you. I will not keep you."
+    },
+    "el_pozo": {
+      "hablante": "workhouse_porter",
+      "retrato": "harto",
+      "texto": "We have the workhouse well inside the walls. Nobody goes out for water.",
+      "palabras": [
+        "pozo_asilo"
+      ],
+      "opciones": [
+        {
+          "texto": "How many have you lost?",
+          "va_a": "la_cifra",
+          "requiere": [
+            "!heard_the_workhouse"
+          ]
+        },
+        {
+          "texto": "How many people live there?",
+          "va_a": "dentro",
+          "requiere": [
+            "!vio_dentro_asilo"
+          ]
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "fin"
+        }
+      ]
+    },
+    "otra_vez": {
+      "hablante": "workhouse_porter",
+      "retrato": "harto",
+      "texto": "Still off duty, Reverend.",
+      "opciones": [
+        {
+          "texto": "Where do they get their water?",
+          "va_a": "el_pozo"
+        },
+        {
+          "texto": "How many have you lost?",
+          "va_a": "la_cifra",
+          "requiere": [
+            "!heard_the_workhouse"
+          ]
+        },
+        {
+          "texto": "How many people live there?",
+          "va_a": "dentro",
+          "requiere": [
+            "!vio_dentro_asilo"
+          ]
+        },
+        {
+          "texto": "Thank you.",
+          "va_a": "fin"
+        }
+      ]
+    }
+  },
+  "_pivote": "Solo cifras; la conclusión la dice Snow al ver la ficha."
+}

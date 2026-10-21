@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/farola_victoriana.gd" id="1_modelo"]
+[ext_resource type="Script" path="res://scripts/world/llama.gd" id="2_llama"]
+
+; Farola de gas encendida: hierro colado y farol de cuatro caras. Sin sombras.
+
+[sub_resource type="StandardMaterial3D" id="Mat_vidrio"]
+albedo_color = Color(1, 0.86, 0.6, 1)
+emission_enabled = true
+emission = Color(0.6, 1, 0.5, 1)
+emission_energy_multiplier = 2.6
+
+[sub_resource type="CylinderMesh" id="Mesh_vidrio"]
+top_radius = 0.19
+bottom_radius = 0.13
+height = 0.44
+radial_segments = 4
+rings = 1
+
+[sub_resource type="CylinderShape3D" id="Forma_poste"]
+height = 3.1
+radius = 0.26
+
+[node name="Farola" type="StaticBody3D"]
+
+[node name="Modelo" type="MeshInstance3D" parent="."]
+script = ExtResource("1_modelo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.55, 0)
+shape = SubResource("Forma_poste")
+
+[node name="Vidrio" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 2.87, 0)
+mesh = SubResource("Mesh_vidrio")
+material_override = SubResource("Mat_vidrio")
+
+[node name="Luz" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.86, 0)
+script = ExtResource("2_llama")
+viveza = 0.05
+light_color = Color(0.5, 1, 0.42, 1)
+light_energy = 4.2
+omni_range = 5.2
+omni_attenuation = 2.0
+light_specular = 0.0
+shadow_enabled = false
+shadow_bias = 0.06
+shadow_normal_bias = 1.4

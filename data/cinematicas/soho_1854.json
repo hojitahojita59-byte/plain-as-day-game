@@ -1,0 +1,66 @@
+{
+  "id": "soho_1854",
+  "descripcion": "LA CINEMÁTICA DEL EPISODIO. No la de la serie. Se dispara cuando el jugador elige este evento histórico en el menú, y es LA MEMORIA HEREDADA: lo que la criatura recibe al meterse en Whitehead. No hay narrador. No habla ningún espíritu. Todo lo que se lee es lo que Whitehead ya sabía esta mañana.",
+  "_regla": "Solo contexto histórico: quién, dónde, qué año, qué pasa y qué se creía.",
+  "_idioma": "Inglés, como todo el texto de la ficción.",
+  "sonido_ambiente": "res://audio/sfx/goteo.wav",
+  "campana": true,
+  "siguiente": "res://scenes/world/calle.tscn",
+  "cartas": [
+    {
+      "voz": "memoria",
+      "texto": "Henry Whitehead. Curate of St Luke's, Berwick Street.",
+      "color": "#08090a",
+      "segundos": 2.6
+    },
+    {
+      "voz": "memoria",
+      "texto": "I know every door on this street, and the name behind it.",
+      "color": "#0a0b0b",
+      "segundos": 3,
+      "nota_diseno": "Va la segunda porque es la que explica por qué el juego lo protagoniza él y no un médico. No investiga por listo: investiga porque conoce a la gente. Toda la mecánica de puerta a puerta cuelga de esta frase."
+    },
+    {
+      "voz": "rotulo",
+      "texto": "SOHO · LONDON · AUGUST 1854",
+      "color": "#101110",
+      "segundos": 3,
+      "nota_diseno": "El rótulo va AQUÍ, en el centro y no al principio. Antes de él tienes un hombre; después, un sitio y una fecha. Empezar por la fecha es contarlo en el orden aburrido."
+    },
+    {
+      "voz": "memoria",
+      "texto": "The cholera has come back to the parish.",
+      "color": "#12130f",
+      "segundos": 2.4
+    },
+    {
+      "voz": "memoria",
+      "texto": "It has taken more of them than I can bury.",
+      "color": "#12130f",
+      "segundos": 3.2,
+      "nota_diseno": "Sin cifras. Un número aquí se olvida y además obliga a defenderlo; que no dé abasto enterrándolos dice la escala mejor y lo dice desde su oficio."
+    },
+    {
+      "voz": "memoria",
+      "texto": "The doctors say the air is foul.",
+      "color": "#14140f",
+      "segundos": 2.4
+    },
+    {
+      "voz": "memoria",
+      "texto": "Tonight, so do I.",
+      "color": "#17160f",
+      "segundos": 3.2
+    },
+    {
+      "voz": "titulo",
+      "texto": "",
+      "color": "#0b0c0a",
+      "segundos": 4.5,
+      "nota_diseno": "El texto lo pone serie.json. El nombre del juego solo está escrito en un sitio. Y aquí significa otra cosa que en el menú, porque acabas de oír a alguien llamar evidente a lo que no lo es."
+    }
+  ],
+  "_sonido": "Goteo de fondo, la campana y alguien que bombea agua (sonidos_bomba.gd).",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "bomba": true
+}

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+; Pilastra entre casas. 7,31 de alto hasta el pretil; origen abajo.
+
+[sub_resource type="BoxMesh" id="BoxMesh_pilastra"]
+size = Vector3(0.55, 7.31, 0.35)
+
+[sub_resource type="StandardMaterial3D" id="Mat_pilastra"]
+albedo_color = Color(0.74, 0.62, 0.44, 1)
+roughness = 1.0
+
+[node name="Pilastra" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.655, 0)
+mesh = SubResource("BoxMesh_pilastra")
+material_override = SubResource("Mat_pilastra")

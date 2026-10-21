@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: la del chal. Editar aqui, no en la calle.
+
+[node name="FiguraMujerChal" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.56, 0.23, 0.19, 1)
+color_pantalon = Color(0.30, 0.24, 0.22, 1)
+color_sombrero = Color(0.44, 0.22, 0.20, 1)
+color_cuello = Color(0.80, 0.76, 0.68, 1)
+lleva_chistera = false
+lleva_chal = true
+lleva_alzacuellos = false
+estatura = 0.90
+inclinacion = 0.38
+brazo_izquierdo = -0.55
+brazo_derecho = -0.62

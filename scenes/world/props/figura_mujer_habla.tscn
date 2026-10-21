@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/world/props/figura.tscn" id="1_figura"]
+
+; Variante de figura: la que habla. Editar aqui, no en la calle.
+
+[node name="FiguraMujerHabla" instance=ExtResource("1_figura")]
+color_abrigo = Color(0.38, 0.28, 0.50, 1)
+color_pantalon = Color(0.27, 0.24, 0.26, 1)
+color_sombrero = Color(0.26, 0.18, 0.32, 1)
+color_cuello = Color(0.82, 0.78, 0.72, 1)
+lleva_chistera = false
+lleva_chal = true
+lleva_alzacuellos = false
+estatura = 0.96
+inclinacion = -0.08
+brazo_izquierdo = 0.62
+brazo_derecho = -0.28

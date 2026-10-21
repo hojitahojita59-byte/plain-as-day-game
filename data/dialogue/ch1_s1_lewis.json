@@ -1,0 +1,58 @@
+{
+  "id": "ch1_s1_lewis",
+  "descripcion": "LA ESCENA MAS IMPORTANTE DEL ACTO I, y es la que menos lo parece. Sarah Lewis, en el escalon del numero 40, vacia el agua de lavar los panales de su hija en el sumidero que esta delante de la bomba. Eso es el caso indice del brote de Broad Street. Aqui no se resuelve, no se sospecha y NO SE SUBRAYA: el jugador tiene que hacer exactamente lo que hizo la historia, que es mirar a otro lado.",
+  "_regla": "No señalar el agua ni el cubo: el Acto III vuelve aquí. El cubo no se puede clicar.",
+  "_por_que_no_hay_opcion_sobre_el_agua": "Sin opción sobre el agua: Whitehead aún no sospecha.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "greeting",
+  "nodos": {
+    "greeting": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "Mrs Lewis. You are up late.",
+      "siguiente": "washing"
+    },
+    "washing": {
+      "hablante": "sarah_lewis",
+      "retrato": "cansada",
+      "texto": "My baby is ill, Reverend. She will only take water. I have washed her things twice and she still will not settle.",
+      "marca": [
+        "saw_the_lewis_door"
+      ],
+      "anota": {
+        "id": "nota_nina_del_40",
+        "que": "The child at number forty has been unwell. Her mother has been washing her things.",
+        "quien": "Mrs Lewis",
+        "donde": "Number forty"
+      },
+      "opciones": [
+        {
+          "texto": "May I see her?",
+          "va_a": "not_tonight"
+        },
+        {
+          "texto": "Is anyone helping you?",
+          "va_a": "no_help"
+        }
+      ]
+    },
+    "not_tonight": {
+      "hablante": "sarah_lewis",
+      "retrato": "seca",
+      "texto": "Not tonight. She has only just gone to sleep.",
+      "siguiente": "tomorrow"
+    },
+    "no_help": {
+      "hablante": "sarah_lewis",
+      "retrato": "seca",
+      "texto": "No. There is nobody, and no time.",
+      "siguiente": "tomorrow"
+    },
+    "tomorrow": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "I will come back tomorrow.",
+      "siguiente": ""
+    }
+  }
+}

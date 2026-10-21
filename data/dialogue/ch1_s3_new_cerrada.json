@@ -1,0 +1,15 @@
+{
+  "id": "ch1_s3_new_cerrada",
+  "descripcion": "NEW STREET, 6. Nadie abre. Una linea y fuera.",
+  "_regla": "Puerta que no da nada: corta, para no costar tiempo.",
+  "_guion": "Texto del Guion jugable del Acto I.",
+  "inicio": "nadie",
+  "nodos": {
+    "nadie": {
+      "hablante": "whitehead",
+      "retrato": "neutro",
+      "texto": "No one answers.",
+      "siguiente": ""
+    }
+  }
+}
