@@ -31,6 +31,8 @@ with the font.
 |---|---|---|
 | EB Garamond | `art/fonts/EB_Garamond/` | SIL Open Font License 1.1 (licence file included) |
 | Pinyon Script | `art/fonts/Pinyon_Script/` | SIL Open Font License 1.1 (licence file included) |
+| Cinzel (menu title) | `art/fonts/Cinzel/` | SIL Open Font License 1.1 (licence file included) |
+| Source Sans 3 (menu labels) | `art/fonts/Source_Sans_3/` | SIL Open Font License 1.1 (licence file included) |
 
 ## Sound
 

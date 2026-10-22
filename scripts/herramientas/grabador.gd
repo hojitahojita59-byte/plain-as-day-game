@@ -14,6 +14,7 @@ var _t: float = 0.0
 var _copia: Variant = null
 var _escena: Node
 var _cam: Camera3D
+var _con_cuaderno: bool = false
 
 
 func _ready() -> void:
@@ -111,10 +112,22 @@ func _conversar(cada: float, hasta: float) -> void:
 		var nodo := DialogueRunner.nodo_actual()
 		var opciones: Array = DialogueRunner._visible_choices(nodo)
 		if nodo.has("pide"):
+			var sirve := ""
 			for f in Dictionary(nodo["pide"].get("fichas", {})):
-				if Cuaderno.sellada(String(f)):
-					DialogueRunner.presentar(String(f))
-					break
+				if sirve.is_empty() and Cuaderno.sellada(String(f)):
+					sirve = String(f)
+			if _con_cuaderno:
+				# Como el jugador: se abre el cuaderno y se elige la tarjeta.
+				DialogueRunner.choose(0)
+				await _esperar(1.6)
+				var exp: Control = HUD.get("_expediente")
+				# La tarjeta puede estar en otra página.
+				(exp.get("_pag_cuaderno") as Control).call(&"mostrar_ficha", sirve)
+				await _esperar(0.6)
+				await _clic_meta(exp, &"ensenar", sirve, 1.0)
+				await _esperar(0.6)
+			else:
+				DialogueRunner.presentar(sirve)
 		elif opciones.is_empty():
 			DialogueRunner.advance()
 		else:
@@ -185,12 +198,12 @@ func _calle_juego() -> void:
 	await _esperar(3.0)
 
 
-func _clic(pos: Vector2) -> void:
+func _clic(pos: Vector2, encima: float = 0.25) -> void:
 	var m := InputEventMouseMotion.new()
 	m.position = pos
 	m.global_position = pos
 	get_tree().root.push_input(m, true)
-	await _esperar(0.25)
+	await _esperar(encima)
 	for apretado in [true, false]:
 		var ev := InputEventMouseButton.new()
 		ev.button_index = MOUSE_BUTTON_LEFT
@@ -279,6 +292,7 @@ func _rectoria() -> void:
 
 ## Llama Snow: la puerta, el pomo y Snow ante el plano.
 func _snow() -> void:
+	_con_cuaderno = true
 	_banderas(3, ["lista_1", "lista_3", ASIENTOS.ENTERRADA])
 	_sellar_todo()
 	for a in ASIENTOS.por_asentar():
@@ -311,7 +325,22 @@ func _mapa() -> void:
 	var vista := get_tree().get_first_node_in_group(&"vista_pajaro")
 	vista.call(&"subir")
 	await _esperar(14.0)
-	vista.call(&"cercar", PLANO.BOMBA + Vector2(0.01, 0.0), 0.17)
+	# Círculo bueno: centro en la media de las muertes y el radio que deja dentro tres cuartos.
+	var puntos: Array[Vector2] = []
+	for r in Casefile.records():
+		var q := PLANO.punto_de_asiento(r)
+		if q != Vector2.INF:
+			puntos.append(q)
+	var centro := Vector2.ZERO
+	for q in puntos:
+		centro += q
+	centro /= maxf(1.0, float(puntos.size()))
+	var distancias: Array[float] = []
+	for q in puntos:
+		distancias.append(q.distance_to(centro))
+	distancias.sort()
+	var radio := minf(0.235, distancias[int(ceil(distancias.size() * 0.78)) - 1] + 0.01)
+	vista.call(&"cercar", centro, radio)
 	await _esperar(5.0)
 	await vista.call(&"final")
 	await _esperar(2.0)
@@ -352,6 +381,13 @@ func _rotulo(capa: CanvasLayer, r: Dictionary) -> void:
 		if tipo == "velo":
 			await _esperar(a - de - 0.6)
 			c.create_tween().tween_property(c, "modulate:a", 0.0, 0.6)
+		# Fundido a negro que vuelve a abrirse (dos recortes de la misma toma).
+		elif tipo == "negro_sale" and r.has("quita"):
+			await _esperar(float(r["quita"]) - de)
+			c.create_tween().tween_property(c, "modulate:a", 0.0, 0.6)
+		return
+	if tipo == "codigo":
+		await _tarjeta_codigo(capa, r, a - de)
 		return
 	var titulo := tipo == "titulo"
 	var raiz := Control.new()
@@ -399,9 +435,11 @@ func _rotulo(capa: CanvasLayer, r: Dictionary) -> void:
 		raiz.add_child(caja)
 		caja.anchor_left = 0.14
 		caja.anchor_right = 0.86
-		if String(r.get("pos", "abajo")) == "arriba":
-			caja.anchor_top = 0.06
-			caja.anchor_bottom = 0.06
+		var pos := String(r.get("pos", "abajo"))
+		if pos in ["arriba", "alto"]:
+			# alto: bajo la indicación gris del mapa.
+			caja.anchor_top = 0.09 if pos == "alto" else 0.06
+			caja.anchor_bottom = caja.anchor_top
 			caja.grow_vertical = Control.GROW_DIRECTION_END
 		else:
 			caja.anchor_top = 0.9
@@ -451,10 +489,179 @@ func _cuaderno() -> void:
 	await _esperar(4.0)
 
 
-func _clic_meta(raiz: Node, clave: StringName, valor: String) -> void:
+func _clic_meta(raiz: Node, clave: StringName, valor: String, encima: float = 0.25) -> void:
 	for n in raiz.find_children("*", "Button", true, false):
 		var b := n as Button
 		if b.has_meta(clave) and String(b.get_meta(clave)) == valor and b.is_visible_in_tree():
-			await _clic(b.get_global_rect().get_center())
+			var scroll := b.get_parent()
+			while scroll != null and not (scroll is ScrollContainer):
+				scroll = scroll.get_parent()
+			if scroll != null:
+				(scroll as ScrollContainer).ensure_control_visible(b)
+				await _esperar(0.3)
+			await _clic(b.get_global_rect().get_center(), encima)
 			return
 	push_warning("Grabador: no encuentro %s %s" % [clave, valor])
+
+
+# --- Código en pantalla ---
+
+const PALABRAS_CLAVE := ["func", "var", "const", "if", "elif", "else", "for", "in", "return", "and", "or",
+	"not", "match", "while", "await", "true", "false", "null"]
+
+
+## Ventana de editor con un fragmento real del proyecto, coloreado.
+func _tarjeta_codigo(capa: CanvasLayer, r: Dictionary, dura: float) -> void:
+	var raiz := Control.new()
+	raiz.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	raiz.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	raiz.modulate.a = 0.0
+	capa.add_child(raiz)
+	var marco := PanelContainer.new()
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0.11, 0.12, 0.14, 0.96)
+	sb.border_color = Color(0.3, 0.32, 0.36)
+	sb.set_border_width_all(2)
+	sb.set_corner_radius_all(12)
+	sb.set_content_margin_all(0)
+	marco.add_theme_stylebox_override("panel", sb)
+	# Ajustada al código y centrada encima del rótulo.
+	marco.anchor_left = 0.12
+	marco.anchor_right = 0.88
+	marco.anchor_top = 0.44
+	marco.anchor_bottom = 0.44
+	marco.grow_vertical = Control.GROW_DIRECTION_BOTH
+	raiz.add_child(marco)
+	var col := VBoxContainer.new()
+	col.add_theme_constant_override("separation", 0)
+	marco.add_child(col)
+	var barra := PanelContainer.new()
+	var sbb := StyleBoxFlat.new()
+	sbb.bg_color = Color(0.17, 0.18, 0.21)
+	sbb.corner_radius_top_left = 12
+	sbb.corner_radius_top_right = 12
+	sbb.content_margin_left = 26
+	sbb.content_margin_top = 12
+	sbb.content_margin_bottom = 12
+	barra.add_theme_stylebox_override("panel", sbb)
+	col.add_child(barra)
+	var mono := SystemFont.new()
+	mono.font_names = PackedStringArray(["Consolas", "Cascadia Mono", "Courier New", "monospace"])
+	var nombre := Label.new()
+	nombre.text = String(r.get("archivo", ""))
+	nombre.add_theme_font_override("font", mono)
+	nombre.add_theme_font_size_override("font_size", 26)
+	nombre.add_theme_color_override("font_color", Color(0.78, 0.8, 0.84))
+	barra.add_child(nombre)
+	var cuerpo := MarginContainer.new()
+	for lado in ["left", "right", "top", "bottom"]:
+		cuerpo.add_theme_constant_override("margin_" + lado, 28)
+	col.add_child(cuerpo)
+	var texto := RichTextLabel.new()
+	texto.bbcode_enabled = true
+	texto.fit_content = true
+	texto.scroll_active = false
+	texto.add_theme_font_override("normal_font", mono)
+	texto.add_theme_font_size_override("normal_font_size", int(r.get("tam", 27)))
+	texto.add_theme_color_override("default_color", Color(0.86, 0.87, 0.9))
+	texto.text = _colorear(String(r.get("texto", "")), String(r.get("archivo", "")) != "tests")
+	cuerpo.add_child(texto)
+	var t := raiz.create_tween()
+	t.tween_property(raiz, "modulate:a", 1.0, 0.4)
+	await _esperar(maxf(0.5, dura - 0.8))
+	var fuera := raiz.create_tween()
+	fuera.tween_property(raiz, "modulate:a", 0.0, 0.4)
+	await fuera.finished
+	raiz.queue_free()
+
+
+func _colorear(codigo: String, es_codigo: bool = true) -> String:
+	var re := RegEx.new()
+	re.compile("(\"(?:[^\"\\\\]|\\\\.)*\")|(#.*$)|\\b([A-Za-z_][A-Za-z_0-9]*)\\b|\\b(\\d+(?:\\.\\d+)?)\\b")
+	var out := PackedStringArray()
+	for linea in codigo.split("\n"):
+		var s := ""
+		var i := 0
+		for m in re.search_all(linea):
+			s += linea.substr(i, m.get_start() - i).replace("[", "[lb]")
+			var trozo := m.get_string().replace("[", "[lb]")
+			if not m.get_string(1).is_empty():
+				s += "[color=#e0a96d]%s[/color]" % trozo
+			elif not m.get_string(2).is_empty():
+				s += "[color=#7f8c7a]%s[/color]" % trozo
+			elif not m.get_string(3).is_empty():
+				var w := m.get_string(3)
+				if not es_codigo:
+					s += ("[color=#7ee08a]%s[/color]" % trozo) if w == "PASS" else trozo
+				elif w in PALABRAS_CLAVE:
+					s += "[color=#c792ea]%s[/color]" % trozo
+				elif w[0] == w[0].to_upper() and w[0] != "_":
+					s += "[color=#6fc3df]%s[/color]" % trozo
+				else:
+					s += trozo
+			elif not m.get_string(4).is_empty():
+				s += "[color=#b5cea8]%s[/color]" % trozo
+			else:
+				s += trozo
+			i = m.get_end()
+		s += linea.substr(i).replace("[", "[lb]")
+		out.append(s)
+	return "\n".join(out)
+
+
+## Fondo para el código: la calle de noche, sin interfaz, con una grúa lenta.
+func _codigo() -> void:
+	_banderas(2)
+	_montar(CALLE)
+	await _esperar(0.5)
+	_sin_interfaz()
+	_camara_propia()
+	await _plano(Vector3(-30, 14, 16), Vector3(20, 18, 16), Vector3(-20, 0, -6), Vector3(25, 0, -6), 24.0)
+
+
+## El globo sin interfaz: se llena de "?" por todo el mundo y Soho se enciende el último; primer plano.
+func _globo() -> void:
+	var menu := _montar("res://scenes/ui/menu_space.tscn")
+	AudioServer.set_bus_mute(AudioServer.get_bus_index(&"Interfaz"), true)
+	await _esperar(0.3)
+	menu.call(&"cine_preparar")
+	var cam: Camera3D = menu.call(&"cine_camara")
+	var globo: Node3D = menu.call(&"cine_globo")
+	var centro := globo.global_position
+	# Plano general: el globo girando despacio en la oscuridad.
+	cam.global_position = centro + Vector3(0.0, 0.6, 9.5)
+	cam.look_at(centro)
+	menu.call(&"cine_giro", 0.16)
+	await _esperar(2.5)
+	# Las preguntas aparecen una a una mientras gira.
+	var n: int = menu.call(&"cine_num_pistas")
+	for i in n:
+		menu.call(&"cine_mostrar_pista", i)
+		await _esperar(1.1 - 0.06 * float(i))
+	await _esperar(1.2)
+	# Se para con Europa de frente y la cámara se acerca un poco.
+	menu.call(&"cine_giro", 0.0)
+	menu.call(&"cine_mirar", 51.51, -0.14, 2.6)
+	var t0 := _t
+	var desde := cam.global_position
+	while _t - t0 < 2.6:
+		var k := smoothstep(0.0, 1.0, (_t - t0) / 2.6)
+		cam.global_position = desde.lerp(centro + Vector3(0.0, 0.3, 7.0), k)
+		cam.look_at(centro)
+		await get_tree().process_frame
+	await _esperar(0.6)
+	# Soho, el último.
+	menu.call(&"cine_mostrar_soho")
+	await _esperar(1.6)
+	# Primer plano lento sobre el punto.
+	var soho: Vector3 = menu.call(&"cine_posicion_soho")
+	var fuera := (soho - centro).normalized()
+	var a := cam.global_position
+	var b := soho + fuera * 1.15 + Vector3(0.0, 0.12, 0.0)
+	t0 = _t
+	while _t - t0 < 6.0:
+		var k := smoothstep(0.0, 1.0, (_t - t0) / 6.0)
+		cam.global_position = a.lerp(b, k)
+		cam.look_at(centro.lerp(soho, k))
+		await get_tree().process_frame
+	await _esperar(5.0)
